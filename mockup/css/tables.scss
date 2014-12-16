@@ -1,0 +1,44 @@
+@import 'variables';
+@import 'mixins';
+@import 'classes';
+
+table.table {
+  background: transparent;
+  border: 0;
+  color: $table-text-color;
+  font-size: $font-size;
+  line-height: $font-size * 1.66;
+  
+  thead {
+    tr {
+      th, td {
+        border: 0;
+        font-weight: bold;
+        letter-spacing: 1px;
+        color: $table-col-header-color;
+        line-height: $font-size * 2.66;
+      }
+    }
+  }
+  
+  tbody {
+    tr {
+      th {
+        color: $table-row-header-color;
+        text-transform: uppercase;
+      }
+      
+      td, th {
+        border-bottom: 0;
+        border-top: 1px solid $table-row-separator-color;
+        line-height: $font-size * 2.66;
+        vertical-align: baseline;
+      }
+    }
+  }
+  
+  th {
+    text-transform: uppercase;
+    font-size: $font-size*4/5;
+  }
+}

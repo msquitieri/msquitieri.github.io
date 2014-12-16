@@ -1,0 +1,222 @@
+@import 'variables';
+@import 'mixins';
+@import 'classes';
+
+header {
+  $header-height: 450px;
+  $header-nav-height: 50px;
+  
+  position: relative;
+  z-index: 2;
+  padding: 0;
+  margin: 0;
+  height: 450px;
+  &.short {
+    height: 200px;
+  }
+  color: $header-color;
+  background-color: $header-background-color;
+  a {
+    @include anchor($header-link-color, $header-link-hover-color, none, none);
+  }
+  
+  nav.main {
+    position: relative; 
+    z-index: 10;
+    display: block;
+    padding: 0 60px;
+    @extend %clearfix;
+    height: $header-nav-height;
+    background: transparent;
+    
+    
+    figure.logo {
+      position: relative;
+      display: block;
+      float: left;
+      padding: 0;
+      margin: 0 1em;
+      height: $header-nav-height;
+      line-height: $header-nav-height;
+      &:first-child { margin-left: 0; }
+      img { vertical-align: -10px }
+    }
+    
+    ul.menu, ul.tools {
+      position: relative;
+      display: block;
+      width: 40%;
+      height: $header-nav-height;
+      padding: 0;
+      margin: 0;
+      font: bold 14px 'Cabin', sans-serif;
+      line-height: $header-nav-height;
+      text-transform: uppercase;
+      list-style-type: none;
+      
+      li {
+        display: inline-block;
+        a { padding: 0 1em; }
+        
+        &.active {}
+      }
+    }
+    
+    ul.menu { 
+      float: left; 
+    }
+    
+    ul.tools { 
+      float: right; 
+      text-align: right; 
+      > * { 
+        text-align: left; 
+        &:last-child { margin-right: 0; }
+      }
+      
+      a.icon {
+        min-height: 18px;
+        &.icon-search {
+          background: url(../images/icon-search.png) no-repeat center center;
+        }
+      }
+    }
+  }
+  
+  .header-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+      linear-gradient(to right, rgba(black, .33), transparent 20%, transparent 80%, rgba(black, .33)),
+      url(../images/NASA_HiddenUniverse_04.jpg) no-repeat center center / cover;
+  }
+  
+  .content {
+    position: relative;
+  }
+  
+  nav.slides {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: $header-height;
+    font-size: $font-size*4/3;
+    line-height: 1.33;
+    background: 
+      linear-gradient(to right, rgba(black, .33), transparent 20%, transparent 80%, rgba(black, .33)),
+      url(../images/NASA_HiddenUniverse_04.jpg) no-repeat center center / cover;
+    
+    ul {
+      position: absolute;
+      display: block;
+      overflow: hidden;
+      padding: 0; 
+      margin: 0;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      list-style-type: none;
+      white-space: nowrap;
+
+      > li {
+        display: inline-block;
+        width: 100%; 
+        height: 100%;
+        padding: $header-nav-height 60px 20px;
+      }
+    }
+    
+    a.slider-prev,
+    a.slider-next {
+      position: absolute;
+      display: block;
+      top: 44%;
+      margin-top: -14px;
+      width: 16px;
+      height: 28px;
+      z-index: 2;
+      transition: opacity 0.25s;
+      opacity: 1;
+      
+      &.disabled {
+        opacity: 0;
+        pointer-events: none;
+      }
+    }
+    a.slider-prev {
+      left: 60px;
+      background: url(../images/slider-left.png) no-repeat center center;
+    }
+    a.slider-next {
+      right: 60px;
+      background: url(../images/slider-right.png) no-repeat center center;
+    }
+    
+    .slider-pages {
+      position: absolute;
+      width: 100%;
+      bottom: 90px;
+      text-align: center;
+      
+      a {
+        font-size: 1.25em;
+        padding: 0 .15em;
+        margin: 0 -0.05em;
+        @include anchor($header-link-color, $header-link-color, none, none);
+        &.active {
+          @include anchor($link-color, $link-color, none, none);
+        }
+      }
+    }
+    
+    h1 {
+      font-size: $font-size*7/3;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin: 1em 0;
+      
+      + .subheading { margin-top: -$font-size*8/3 }
+    }
+    
+    h2 {
+      font-size: $font-size*6/3;
+      font-weight: bold;
+      margin: 1em 0;
+      
+      + .subheading { margin-top: -$font-size*7/3 }
+    }
+    
+    small {
+      font-size: $font-size*4/5
+    }
+    
+    em { 
+      font-style: normal;
+      color: $header-em-color;
+    }
+  }
+  
+  form.search { 
+    position: absolute;
+    display: block;
+    left: 50%;
+    margin-left: -301px;
+    bottom: 30px;
+    width: 603px;
+    height: 40px;
+    background: url(../temp/mock-select.png);
+    
+    * {
+      // TEMP
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,221 @@
+/* line 3, C:/Projects/GoWatchIt/billydee/mockup/css/classes */
+header nav.main:before, header nav.main:after {
+  content: ' ';
+  display: table; }
+
+/* line 8, C:/Projects/GoWatchIt/billydee/mockup/css/classes */
+header nav.main:after {
+  clear: both; }
+
+/* line 5, C:/Projects/GoWatchIt/billydee/mockup/css/header.scss */
+header {
+  position: relative;
+  z-index: 2;
+  padding: 0;
+  margin: 0;
+  height: 450px;
+  color: #fff;
+  background-color: #2e2e2e; }
+  /* line 14, C:/Projects/GoWatchIt/billydee/mockup/css/header.scss */
+  header.short {
+    height: 200px; }
+  /* line 56, C:/Projects/GoWatchIt/billydee/mockup/css/mixins */
+  header a, header a:link {
+    color: #fff;
+    text-decoration: none; }
+  /* line 61, C:/Projects/GoWatchIt/billydee/mockup/css/mixins */
+  header a:hover {
+    color: #fff;
+    text-decoration: none; }
+  /* line 23, C:/Projects/GoWatchIt/billydee/mockup/css/header.scss */
+  header nav.main {
+    position: relative;
+    z-index: 10;
+    display: block;
+    padding: 0 60px;
+    height: 50px;
+    background: transparent; }
+    /* line 33, C:/Projects/GoWatchIt/billydee/mockup/css/header.scss */
+    header nav.main figure.logo {
+      position: relative;
+      display: block;
+      float: left;
+      padding: 0;
+      margin: 0 1em;
+      height: 50px;
+      line-height: 50px; }
+      /* line 41, C:/Projects/GoWatchIt/billydee/mockup/css/header.scss */
+      header nav.main figure.logo:first-child {
+        margin-left: 0; }
+      /* line 42, C:/Projects/GoWatchIt/billydee/mockup/css/header.scss */
+      header nav.main figure.logo img {
+        vertical-align: -10px; }
+    /* line 45, C:/Projects/GoWatchIt/billydee/mockup/css/header.scss */
+    header nav.main ul.menu, header nav.main ul.tools {
+      position: relative;
+      display: block;
+      width: 40%;
+      height: 50px;
+      padding: 0;
+      margin: 0;
+      font: bold 14px 'Cabin', sans-serif;
+      line-height: 50px;
+      text-transform: uppercase;
+      list-style-type: none; }
+      /* line 57, C:/Projects/GoWatchIt/billydee/mockup/css/header.scss */
+      header nav.main ul.menu li, header nav.main ul.tools li {
+        display: inline-block; }
+        /* line 59, C:/Projects/GoWatchIt/billydee/mockup/css/header.scss */
+        header nav.main ul.menu li a, header nav.main ul.tools li a {
+          padding: 0 1em; }
+    /* line 65, C:/Projects/GoWatchIt/billydee/mockup/css/header.scss */
+    header nav.main ul.menu {
+      float: left; }
+    /* line 69, C:/Projects/GoWatchIt/billydee/mockup/css/header.scss */
+    header nav.main ul.tools {
+      float: right;
+      text-align: right; }
+      /* line 72, C:/Projects/GoWatchIt/billydee/mockup/css/header.scss */
+      header nav.main ul.tools > * {
+        text-align: left; }
+        /* line 74, C:/Projects/GoWatchIt/billydee/mockup/css/header.scss */
+        header nav.main ul.tools > *:last-child {
+          margin-right: 0; }
+      /* line 77, C:/Projects/GoWatchIt/billydee/mockup/css/header.scss */
+      header nav.main ul.tools a.icon {
+        min-height: 18px; }
+        /* line 79, C:/Projects/GoWatchIt/billydee/mockup/css/header.scss */
+        header nav.main ul.tools a.icon.icon-search {
+          background: url(../images/icon-search.png) no-repeat center center; }
+  /* line 86, C:/Projects/GoWatchIt/billydee/mockup/css/header.scss */
+  header .header-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.33), transparent 20%, transparent 80%, rgba(0, 0, 0, 0.33)), url(../images/NASA_HiddenUniverse_04.jpg) no-repeat center center/cover; }
+  /* line 97, C:/Projects/GoWatchIt/billydee/mockup/css/header.scss */
+  header .content {
+    position: relative; }
+  /* line 101, C:/Projects/GoWatchIt/billydee/mockup/css/header.scss */
+  header nav.slides {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 450px;
+    font-size: 20px;
+    line-height: 1.33;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.33), transparent 20%, transparent 80%, rgba(0, 0, 0, 0.33)), url(../images/NASA_HiddenUniverse_04.jpg) no-repeat center center/cover; }
+    /* line 116, C:/Projects/GoWatchIt/billydee/mockup/css/header.scss */
+    header nav.slides ul {
+      position: absolute;
+      display: block;
+      overflow: hidden;
+      padding: 0;
+      margin: 0;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      list-style-type: none;
+      white-space: nowrap; }
+      /* line 129, C:/Projects/GoWatchIt/billydee/mockup/css/header.scss */
+      header nav.slides ul > li {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        padding: 50px 60px 20px; }
+    /* line 138, C:/Projects/GoWatchIt/billydee/mockup/css/header.scss */
+    header nav.slides a.slider-prev, header nav.slides a.slider-next {
+      position: absolute;
+      display: block;
+      top: 44%;
+      margin-top: -14px;
+      width: 16px;
+      height: 28px;
+      z-index: 2;
+      transition: opacity 0.25s;
+      opacity: 1; }
+      /* line 149, C:/Projects/GoWatchIt/billydee/mockup/css/header.scss */
+      header nav.slides a.slider-prev.disabled, header nav.slides a.slider-next.disabled {
+        opacity: 0;
+        pointer-events: none; }
+    /* line 154, C:/Projects/GoWatchIt/billydee/mockup/css/header.scss */
+    header nav.slides a.slider-prev {
+      left: 60px;
+      background: url(../images/slider-left.png) no-repeat center center; }
+    /* line 158, C:/Projects/GoWatchIt/billydee/mockup/css/header.scss */
+    header nav.slides a.slider-next {
+      right: 60px;
+      background: url(../images/slider-right.png) no-repeat center center; }
+    /* line 163, C:/Projects/GoWatchIt/billydee/mockup/css/header.scss */
+    header nav.slides .slider-pages {
+      position: absolute;
+      width: 100%;
+      bottom: 90px;
+      text-align: center; }
+      /* line 169, C:/Projects/GoWatchIt/billydee/mockup/css/header.scss */
+      header nav.slides .slider-pages a {
+        font-size: 1.25em;
+        padding: 0 0.15em;
+        margin: 0 -0.05em; }
+        /* line 56, C:/Projects/GoWatchIt/billydee/mockup/css/mixins */
+        header nav.slides .slider-pages a, header nav.slides .slider-pages a:link {
+          color: #fff;
+          text-decoration: none; }
+        /* line 61, C:/Projects/GoWatchIt/billydee/mockup/css/mixins */
+        header nav.slides .slider-pages a:hover {
+          color: #fff;
+          text-decoration: none; }
+        /* line 56, C:/Projects/GoWatchIt/billydee/mockup/css/mixins */
+        header nav.slides .slider-pages a.active, header nav.slides .slider-pages a.active:link {
+          color: #e84e24;
+          text-decoration: none; }
+        /* line 61, C:/Projects/GoWatchIt/billydee/mockup/css/mixins */
+        header nav.slides .slider-pages a.active:hover {
+          color: #e84e24;
+          text-decoration: none; }
+    /* line 180, C:/Projects/GoWatchIt/billydee/mockup/css/header.scss */
+    header nav.slides h1 {
+      font-size: 35px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin: 1em 0; }
+      /* line 186, C:/Projects/GoWatchIt/billydee/mockup/css/header.scss */
+      header nav.slides h1 + .subheading {
+        margin-top: -40px; }
+    /* line 189, C:/Projects/GoWatchIt/billydee/mockup/css/header.scss */
+    header nav.slides h2 {
+      font-size: 30px;
+      font-weight: bold;
+      margin: 1em 0; }
+      /* line 194, C:/Projects/GoWatchIt/billydee/mockup/css/header.scss */
+      header nav.slides h2 + .subheading {
+        margin-top: -35px; }
+    /* line 197, C:/Projects/GoWatchIt/billydee/mockup/css/header.scss */
+    header nav.slides small {
+      font-size: 12px; }
+    /* line 201, C:/Projects/GoWatchIt/billydee/mockup/css/header.scss */
+    header nav.slides em {
+      font-style: normal;
+      color: #f26a46; }
+  /* line 207, C:/Projects/GoWatchIt/billydee/mockup/css/header.scss */
+  header form.search {
+    position: absolute;
+    display: block;
+    left: 50%;
+    margin-left: -301px;
+    bottom: 30px;
+    width: 603px;
+    height: 40px;
+    background: url(../temp/mock-select.png); }
+    /* line 217, C:/Projects/GoWatchIt/billydee/mockup/css/header.scss */
+    header form.search * {
+      display: none; }
+
+/*# sourceMappingURL=header.css.map */

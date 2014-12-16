@@ -1,0 +1,79 @@
+// Colors for Humans
+// NOTE: No color values should be explicitly used anywhere besides these
+$GWIGraphite: #2e2e2e;
+$GWICharcoal: #3c3c3c;
+$GWILightCharcoal: #606060;
+
+$GWIOrange: #e84e24;
+$GWILightOrange: #f26a46;
+
+$GWISand: #9d9282;
+$GWIMediumSand: #bfb7aa;
+$GWILightSand: #d2ccc3;
+
+$GWIMilk: #ccc;
+$GWIWhite: #fff;
+// ---
+
+// Colors for the styles
+$body-background-color: $GWICharcoal;
+
+// * Header
+$header-background-color: $GWIGraphite;
+$header-color: $GWIWhite;
+$header-link-color: $GWIWhite;
+$header-link-hover-color: $GWIWhite;
+$header-em-color: $GWILightOrange;
+
+// * Page
+$page-text-color: $GWIWhite;
+$page-text-deemphasized-color: $GWIMilk;
+$page-background-color: $GWILightCharcoal;
+$slider-caption-background: $GWIGraphite;
+$link-color: $GWIOrange;
+$link-hover-color: $GWILightOrange;
+$drawer-background-color: $GWIGraphite;
+$drawer-details-background-color: lighten($drawer-background-color, 10%);
+
+// * Speciffic block: Filter
+$filter-background-color: $GWIGraphite;
+$filter-text-color: $GWIMilk;
+$filter-text-darker-color: $GWISand;
+$filter-text-emphasized-color: $GWIWhite;
+$filter-accent-color: $GWILightOrange;
+
+// * Light panel
+$page-background-color-light: $GWIWhite;
+$page-text-color-light: $GWILightCharcoal;
+
+// * Footer
+$footer-background-color: $GWIGraphite;
+$footer-text-color: $GWIMilk;
+$footer-link-color: $GWILightOrange;
+$footer-link-hover-color: $GWILightOrange;
+
+// Typography
+$font-family: "proxima-nova",sans-serif;
+$font-size: 15px;
+$line-height: 1.4;
+
+// Tables
+$table-row-separator-color: $GWICharcoal;
+$table-col-header-color: $GWIOrange;
+$table-row-header-color: $GWIGraphite;
+$table-text-color: $GWIWhite;
+
+// Buttons
+$button-primary-background-color: $GWIOrange;
+$button-primary-border-color: $GWIOrange;
+$button-primary-text-color: $GWIWhite;
+$button-default-background-color: $GWILightCharcoal;
+$button-default-border-color: $GWICharcoal;
+$button-default-text-color: $GWISand;
+
+// Responsive breakpoints
+$breakpoint-sm: 768px;
+$breakpoint-md: 992px;
+$breakpoint-lg: 1200px;
+$breakpoint-xl: 1380px;
+// ---

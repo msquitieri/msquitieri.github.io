@@ -1,0 +1,36 @@
+/* line 1, C:/Projects/GoWatchIt/billydee/mockup/css/icons.scss */
+.icon.icon-eye, .icon.icon-remove {
+  width: 16px;
+  height: 16px; }
+
+/* line 6, C:/Projects/GoWatchIt/billydee/mockup/css/icons.scss */
+.icon.icon-grip {
+  width: 16px;
+  height: 24px; }
+
+/* line 11, C:/Projects/GoWatchIt/billydee/mockup/css/icons.scss */
+.icon {
+  display: inline-block;
+  background-position: center center;
+  background-repeat: no-repeat;
+  vertical-align: -3px; }
+  /* line 17, C:/Projects/GoWatchIt/billydee/mockup/css/icons.scss */
+  .icon.icon-eye {
+    background-image: url(../images/icon-eye.png); }
+  /* line 22, C:/Projects/GoWatchIt/billydee/mockup/css/icons.scss */
+  .icon.icon-remove {
+    background-image: url(../images/icon-remove-normal.png); }
+  /* line 27, C:/Projects/GoWatchIt/billydee/mockup/css/icons.scss */
+  .icon.icon-grip {
+    background-image: url(../images/icon-grip-normal.png);
+    vertical-align: -8px;
+    margin-right: 8px; }
+
+/* line 36, C:/Projects/GoWatchIt/billydee/mockup/css/icons.scss */
+.active .icon-grip, .active.icon-grip {
+  background-image: url(../images/icon-grip-acive.png); }
+/* line 40, C:/Projects/GoWatchIt/billydee/mockup/css/icons.scss */
+.active .icon-remove, .active.icon-remove {
+  background-image: url(../images/icon-remove-active.png); }
+
+/*# sourceMappingURL=icons.css.map */

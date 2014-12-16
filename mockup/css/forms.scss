@@ -1,0 +1,71 @@
+@import 'variables';
+
+.form-horizontal { 
+  .control-label { 
+    text-align: left;
+    font-weight: normal;
+  }
+}
+
+%form-gwi-radio-input { 
+  display: none;
+  
+  &:checked + label:before {
+    border-color: $filter-accent-color;
+    background-color: $filter-accent-color;
+  }
+}
+
+%form-gwi-radio-label {
+  &[for] {
+    cursor: pointer;
+  }
+  
+  &:before {
+    position: relative;
+    display: inline-block;
+    content: '';
+    width: 11px;
+    height: 11px;
+    border-radius: 6px;
+    vertical-align: -1px;;
+    border: 1px solid $filter-text-darker-color;
+    background: transparent;
+    margin-right: 0.5em;
+  }
+}
+
+form, .form {
+  
+  .check-list-heading {
+    color: $filter-text-emphasized-color;
+    text-transform: uppercase;
+    padding: 15px 15px 5px 1px;
+  }
+
+  .check-list {
+    border-left: 1px solid #454545;
+    line-height: 1.66em;
+    margin-bottom: 20px;
+
+    label {
+      display: block;
+      font-weight: normal;
+      cursor: pointer;
+
+      b { color: #fff }
+    }
+  }
+  
+  .check-list, .checkbox, .radio, .radio-inline, .checkbox-inline {
+    input[type=checkbox], 
+    input[type=radio] {
+      @extend %form-gwi-radio-input;
+    }
+    
+    label {
+      @extend %form-gwi-radio-label;
+    }
+  }
+  
+}

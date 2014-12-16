@@ -1,0 +1,49 @@
+/* line 4, C:/Projects/GoWatchIt/billydee/mockup/css/forms.scss */
+.form-horizontal .control-label {
+  text-align: left;
+  font-weight: normal; }
+
+/* line 10, C:/Projects/GoWatchIt/billydee/mockup/css/forms.scss */
+form .check-list input[type=checkbox], form .check-list input[type=radio], form .checkbox input[type=checkbox], form .checkbox input[type=radio], form .radio input[type=checkbox], form .radio input[type=radio], form .radio-inline input[type=checkbox], form .radio-inline input[type=radio], form .checkbox-inline input[type=checkbox], form .checkbox-inline input[type=radio], .form .check-list input[type=checkbox], .form .check-list input[type=radio], .form .checkbox input[type=checkbox], .form .checkbox input[type=radio], .form .radio input[type=checkbox], .form .radio input[type=radio], .form .radio-inline input[type=checkbox], .form .radio-inline input[type=radio], .form .checkbox-inline input[type=checkbox], .form .checkbox-inline input[type=radio] {
+  display: none; }
+  /* line 13, C:/Projects/GoWatchIt/billydee/mockup/css/forms.scss */
+  form .check-list input[type=checkbox]:checked + label:before, form .check-list input[type=radio]:checked + label:before, form .checkbox input[type=checkbox]:checked + label:before, form .checkbox input[type=radio]:checked + label:before, form .radio input[type=checkbox]:checked + label:before, form .radio input[type=radio]:checked + label:before, form .radio-inline input[type=checkbox]:checked + label:before, form .radio-inline input[type=radio]:checked + label:before, form .checkbox-inline input[type=checkbox]:checked + label:before, form .checkbox-inline input[type=radio]:checked + label:before, .form .check-list input[type=checkbox]:checked + label:before, .form .check-list input[type=radio]:checked + label:before, .form .checkbox input[type=checkbox]:checked + label:before, .form .checkbox input[type=radio]:checked + label:before, .form .radio input[type=checkbox]:checked + label:before, .form .radio input[type=radio]:checked + label:before, .form .radio-inline input[type=checkbox]:checked + label:before, .form .radio-inline input[type=radio]:checked + label:before, .form .checkbox-inline input[type=checkbox]:checked + label:before, .form .checkbox-inline input[type=radio]:checked + label:before {
+    border-color: #f26a46;
+    background-color: #f26a46; }
+
+/* line 20, C:/Projects/GoWatchIt/billydee/mockup/css/forms.scss */
+form .check-list label[for], form .checkbox label[for], form .radio label[for], form .radio-inline label[for], form .checkbox-inline label[for], .form .check-list label[for], .form .checkbox label[for], .form .radio label[for], .form .radio-inline label[for], .form .checkbox-inline label[for] {
+  cursor: pointer; }
+/* line 24, C:/Projects/GoWatchIt/billydee/mockup/css/forms.scss */
+form .check-list label:before, form .checkbox label:before, form .radio label:before, form .radio-inline label:before, form .checkbox-inline label:before, .form .check-list label:before, .form .checkbox label:before, .form .radio label:before, .form .radio-inline label:before, .form .checkbox-inline label:before {
+  position: relative;
+  display: inline-block;
+  content: '';
+  width: 11px;
+  height: 11px;
+  border-radius: 6px;
+  vertical-align: -1px;
+  border: 1px solid #9d9282;
+  background: transparent;
+  margin-right: 0.5em; }
+
+/* line 40, C:/Projects/GoWatchIt/billydee/mockup/css/forms.scss */
+form .check-list-heading, .form .check-list-heading {
+  color: #fff;
+  text-transform: uppercase;
+  padding: 15px 15px 5px 1px; }
+/* line 46, C:/Projects/GoWatchIt/billydee/mockup/css/forms.scss */
+form .check-list, .form .check-list {
+  border-left: 1px solid #454545;
+  line-height: 1.66em;
+  margin-bottom: 20px; }
+  /* line 51, C:/Projects/GoWatchIt/billydee/mockup/css/forms.scss */
+  form .check-list label, .form .check-list label {
+    display: block;
+    font-weight: normal;
+    cursor: pointer; }
+    /* line 56, C:/Projects/GoWatchIt/billydee/mockup/css/forms.scss */
+    form .check-list label b, .form .check-list label b {
+      color: #fff; }
+
+/*# sourceMappingURL=forms.css.map */

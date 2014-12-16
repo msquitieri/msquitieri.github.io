@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Watch instantly, rent or buy movies online, on DVD &amp; Blu-ray, in theaters, or on demand - GoWatchIt</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="//use.typekit.net/olw7ara.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+</head>
+<body>
+  <div id="container">
+    <header class="short">
+      <nav class="main">
+        <figure class="logo">
+          <a href=""><img src="images/gwi-header-logo.png" width="119" height="30" alt=""></a>
+        </figure>
+        
+        <ul class="menu">
+          <li><a href="">Movies</a></li>
+          <li><a href="">TV</a></li>
+          <li><a href="">Web Series</a></li>
+        </ul>
+        
+        <ul class="tools">
+          <li><a href="">Sign in</a></li>
+          <li><a href="" class="icon icon-search"></a></li>
+        </ul>
+      </nav>
+      
+      <form action="" class="search">
+       
+        <div class="input-group">
+          <input type="text" name="q" placeholder="What would you like to watch?" value="">
+          
+          <select name="genre" placeholder="Genre">
+            <option value=""></option>
+            <option value="action">Action</option>
+            <option value="comedy">Comedy</option>
+            <option value="drama">Drama</option>
+          </select>
+          
+          <select name="service" id="" placeholder="Service">
+            <option value=""></option>
+            <option value="Amazon">Amazon</option>
+            <option value="Hulu">Hulu</option>
+            <option value="Red Rover">Red Rover</option>
+            <option value="Eggs &amp; Bacon">Eggs &amp; Bacon</option>
+          </select>
+          
+          <button type="submit">Search</button>
+          
+        </div>
+        
+      </form>
+    </header>
+    
+    <div id="main">
+     
+      <section class="list">
+        <h2>Search results for George Lucas</h2>
+        
+        <div class="filter">
+          <nav class="main">
+            <ul class="tab-buttons">
+              <li class="active"><a href="">Movies</a></li>
+              <li><a href="">TV</a></li>
+              <li><a href="">Web Series</a></li>
+              <li><a href="">People</a></li>
+            </ul>
+            <a href="" class="pull-right">Popularity</a>
+          </nav>
+          
+          <div class="form" style="overflow: hidden;">
+            <div class="actions">
+              <a href=""><span class="glyphicon glyphicon-remove"></span>
+                Filter movie results</a>
+            </div>
+            
+            <div class="row">
+              <div class="col-sm-4 check-list-heading">Genre</div>
+              <div class="col-sm-8 check-list-heading">Services</div>
+            </div>
+            <div class="row">
+              <div class="col-sm-2 check-list">
+                <input type="checkbox" name="genre" id="genre_action" value="action"><label for="genre_action">Action & Adventure</label>
+                <input type="checkbox" name="genre" id="genre_anime" value="anime"><label for="genre_anime">Anime</label>
+                <input type="checkbox" name="genre" id="genre_children" value="children"><label for="genre_children">Children & Family</label>
+                <input type="checkbox" name="genre" id="genre_classics" value="action"><label for="genre_classics">Classics</label>
+                <input type="checkbox" name="genre" id="genre_comedies" value="comedies"><label for="genre_comedies">Comedies</label>
+                <input type="checkbox" name="genre" id="genre_cult" value="cult"><label for="genre_cult">Cult Movies</label>
+                <input type="checkbox" name="genre" id="genre_documentaries" value="documentaries"><label for="genre_documentaries">Documentaries</label>
+                <input type="checkbox" name="genre" id="genre_dramas" value="dramas"><label for="genre_dramas">Dramas</label>
+                <input type="checkbox" name="genre" id="genre_faith" value="faith"><label for="genre_faith">Faith</label>
+                <input type="checkbox" name="genre" id="genre_foreign" value="foreign"><label for="genre_foreign">Foreign</label>
+              </div>
+              <div class="col-sm-2 check-list">
+                <input type="checkbox" name="genre" id="genre_action1" value="action"><label for="genre_action1">Action & Adventure</label>
+                <input type="checkbox" name="genre" id="genre_anime1" value="anime"><label for="genre_anime1">Anime</label>
+                <input type="checkbox" name="genre" id="genre_children1" value="children"><label for="genre_children1">Children & Family</label>
+                <input type="checkbox" name="genre" id="genre_classics1" value="action"><label for="genre_classics1">Classics</label>
+                <input type="checkbox" name="genre" id="genre_comedies1" value="comedies"><label for="genre_comedies1">Comedies</label>
+                <input type="checkbox" name="genre" id="genre_cult1" value="cult"><label for="genre_cult1">Cult Movies</label>
+                <input type="checkbox" name="genre" id="genre_documentaries1" value="documentaries"><label for="genre_documentaries1">Documentaries</label>
+                <input type="checkbox" name="genre" id="genre_dramas1" value="dramas"><label for="genre_dramas1">Dramas</label>
+                <input type="checkbox" name="genre" id="genre_faith1" value="faith"><label for="genre_faith1">Faith</label>
+                <br>
+              </div>
+              <div class="col-sm-2 check-list">
+                <input type="checkbox" name="service" id="service_showtimes" value="show"><label for="service_showtimes"><b>SHOWTIMES</b></label>
+                <input type="checkbox" name="service" id="service_fandango" value="fandango"><label for="service_fandango">Fandango</label>
+                <br>
+                <input type="checkbox" name="service" id="service_dvd" value="dvd"><label for="service_dvd"><b>DVD & BLU-RAY</b></label>
+                <input type="checkbox" name="service" id="service_netflix_dvd" value="netflix_dvd"><label for="service_netflix_dvd">Netflix DVD</label>
+                <input type="checkbox" name="service" id="service_amazon" value="amazon_dvd"><label for="service_amazon">Amazon</label>
+                <input type="checkbox" name="service" id="service_redbox" value="redbox"><label for="service_redbox">Redbox</label>
+                <br>
+                <input type="checkbox" name="service" id="service_free" value="free"><label for="service_free"><b>WATCH FOR FREE</b></label>
+                <input type="checkbox" name="service" id="service_hulu" value="hulu"><label for="service_hulu">Hulu</label>
+              </div>
+              <div class="col-sm-2 check-list">
+                <input type="checkbox" name="service_buy" id="service_buy_rent" value="buy_rent"><label for="service_buy_rent"><b>BUY OR RENT</b></label>
+                <input type="checkbox" name="service_buy" id="service_amazon_buy" value="amazon_buy"><label for="service_amazon_buy">Amazon</label>
+                <input type="checkbox" name="service_buy" id="service_itunes" value="itunes"><label for="service_itunes">iTunes</label>
+                <input type="checkbox" name="service_buy" id="service_google_play" value="google_play"><label for="service_google_play">Google Play</label>
+                <input type="checkbox" name="service_buy" id="service_vudu" value="vudu"><label for="service_vudu">Vudu</label>
+                <input type="checkbox" name="service_buy" id="service_target" value="target"><label for="service_target">Target Ticket</label>
+                <input type="checkbox" name="service_buy" id="service_xbox" value="xbox"><label for="service_xbox">XBOX</label>
+                <input type="checkbox" name="service_buy" id="service_sony" value="sony"><label for="service_sony">Sony</label>
+                <br><br>
+              </div>
+              <div class="col-sm-2 check-list">
+                <input type="checkbox" name="service_stream" id="service_stream" value="stream"><label for="service_stream"><b>STREAM ONLINE</b></label>
+                <input type="checkbox" name="service_stream" id="service_stream_amazon" value="stream_amazon"><label for="service_stream_amazon">Amazon Instant Video</label>
+                <input type="checkbox" name="service_stream" id="service_bravo" value="bravo"><label for="service_bravo">Bravo</label>
+                <input type="checkbox" name="service_stream" id="service_cnbc" value="cnbc"><label for="service_cnbc">CNBC</label>
+                <input type="checkbox" name="service_stream" id="service_crackle" value="crackle"><label for="service_crackle">Crackle</label>
+                <input type="checkbox" name="service_stream" id="service_e_channel" value="e_channel"><label for="service_e_channel">E!</label>
+                <input type="checkbox" name="service_stream" id="service_esquire" value="esquire"><label for="service_esquire">Esquire</label>
+                <input type="checkbox" name="service_stream" id="service_flixter" value="flixter"><label for="service_flixter">Flixter</label>
+                <input type="checkbox" name="service_stream" id="service_stream_google_play" value="stream_google_play"><label for="service_stream_google_play">Google Play</label>
+                <input type="checkbox" name="service_stream" id="service_stream_hulu" value="stream_hulu"><label for="service_stream_hulu">Hulu</label>
+              </div>
+              <div class="col-sm-2 check-list">
+                <br>
+                <input type="checkbox" name="service_stream" id="service_hulu_plus" value="hulu_plus"><label for="service_hulu_plus">Hulu Plus</label>
+                <input type="checkbox" name="service_stream" id="service_indieflix" value="indieflix"><label for="service_indieflix">IndieFlix</label>
+                <input type="checkbox" name="service_stream" id="service_stream_itunes" value="stream_itunes"><label for="service_stream_itunes">iTunes</label>
+                <input type="checkbox" name="service_stream" id="service_movies_on_demand" value="movies_on_demand"><label for="service_movies_on_demand">Movies On Demand</label>
+                <input type="checkbox" name="service_stream" id="service_mun2" value="mun2"><label for="service_mun2">Mun2</label>
+                <input type="checkbox" name="service_stream" id="service_netflix_instant" value="netflix_instant"><label for="service_netflix_instant">Netflix Instant</label>
+                <input type="checkbox" name="service_stream" id="service_oxygen" value="oxygen"><label for="service_oxygen">Oxygen</label>
+                <input type="checkbox" name="service_stream" id="service_snagfilms" value="snagfilms"><label for="service_snagfilms">SnagFilms</label>
+                <input type="checkbox" name="service_stream" id="service_sony_entertainment" value="sony_entertainment"><label for="service_sony_entertainment">Sony Entertainment</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="container">
+          <ul class="items">
+            <li>
+              <figure>
+                <a href="" class="poster">
+                  <img src="temp/tmp-slide-poster-2.png" alt="">
+                </a>
+                <a href="">
+                  <div class="info">
+                    <div class="title">Boyhood</div>
+                    <div class="year">2014</div>
+                    <div class="popularity" data-count="22">Want to watch</div>
+                  </div>
+                </a>
+              </figure>
+            </li>
+
+            <li>
+              <figure>
+                <a href="" class="poster">
+                  <img src="temp/tmp-slide-poster-3.png" alt="">
+                </a>
+                <a href="">
+                  <div class="info">
+                    <div class="title">Game of Thrones</div>
+                    <div class="year">2014</div>
+                    <div class="popularity" data-count="99">Want to watch</div>
+                  </div>
+                </a>
+              </figure>
+            </li>
+
+            <li>
+              <figure>
+                <a href="" class="poster">
+                  <img src="temp/tmp-slide-poster-4.png" alt="">
+                </a>
+                <a href="">
+                  <div class="info">
+                    <div class="title">Automata</div>
+                    <div class="year">2014</div>
+                    <div class="popularity" data-count="17">Want to watch</div>
+                  </div>
+                </a>
+              </figure>
+            </li>
+
+            <li>
+              <figure>
+                <a href="" class="poster">
+                  <img src="temp/tmp-slide-poster-5.png" alt="">
+                </a>
+                <a href="">
+                  <div class="info">
+                    <div class="title">Walking Dead</div>
+                    <div class="year">2014</div>
+                    <div class="popularity" data-count="37">Want to watch</div>
+                  </div>
+                </a>
+              </figure>
+            </li>
+
+            <li>
+              <figure>
+                <a href="" class="poster">
+                  <img src="temp/tmp-slide-poster-6.png" alt="">
+                </a>
+                <a href="">
+                  <div class="info">
+                    <div class="title">Guardians of the Galaxy</div>
+                    <div class="year">2014</div>
+                    <div class="popularity" data-count="3">Want to watch</div>
+                  </div>
+                </a>
+              </figure>
+            </li>
+
+            <li>
+              <figure>
+                <a href="" class="poster">
+                  <img src="temp/tmp-slide-poster-7.png" alt="">
+                </a>
+                <a href="">
+                  <div class="info">
+                    <div class="title">House of cards</div>
+                    <div class="year">2014</div>
+                    <div class="popularity" data-count="10">Want to watch</div>
+                  </div>
+                </a>
+              </figure>
+            </li>
+
+            <li>
+              <figure>
+                <a href="" class="poster">
+                  <img src="temp/tmp-slide-poster-8.png" alt="">
+                </a>
+                <a href="">
+                  <div class="info">
+                    <div class="title">Transformers</div>
+                    <div class="year">2014</div>
+                    <div class="popularity" data-count="22">Want to watch</div>
+                  </div>
+                </a>
+              </figure>
+            </li>
+
+            <li>
+              <figure>
+                <a href="" class="poster">
+                  <img src="temp/tmp-slide-poster-9.png" alt="">
+                </a>
+                <a href="">
+                  <div class="info">
+                    <div class="title">The Grand Budapest Hotel</div>
+                    <div class="year">2014</div>
+                    <div class="popularity" data-count="99">Want to watch</div>
+                  </div>
+                </a>
+              </figure>
+            </li>
+
+            <li>
+              <figure>
+                <a href="" class="poster">
+                  <img src="temp/tmp-slide-poster-a.png" alt="">
+                </a>
+                <a href="">
+                  <div class="info">
+                    <div class="title">WALL-E</div>
+                    <div class="year">2014</div>
+                    <div class="popularity" data-count="17">Want to watch</div>
+                  </div>
+                </a>
+              </figure>
+            </li>
+
+            <li>
+              <figure>
+                <a href="" class="poster">
+                  <img src="temp/tmp-slide-poster-b.png" alt="">
+                </a>
+                <a href="">
+                  <div class="info">
+                    <div class="title">The Equalizer</div>
+                    <div class="year">2014</div>
+                    <div class="popularity" data-count="37">Want to watch</div>
+                  </div>
+                </a>
+              </figure>
+            </li>
+
+          </ul>
+        </div>
+      </section>
+      
+      <!-- List of posters -->
+      <section class="list">
+        <h2>More to watch</h2>
+
+        <div class="container">
+          <ul class="items">
+            <li>
+              <figure>
+                <a href="" class="poster"><!-- trailer link -->
+                  <img src="temp/tmp-slide-poster-1.png" alt="">
+                </a>
+                <a href=""><!-- movie detail link -->
+                  <div class="info">
+                    <div class="title">Gone Girl</div>
+                    <div class="year">2014</div>
+                    <div class="popularity" data-count="10">Want to watch</div>
+                  </div>
+                </a>
+              </figure>
+            </li>
+
+            <li>
+              <figure>
+                <a href="" class="poster">
+                  <img src="temp/tmp-slide-poster-2.png" alt="">
+                </a>
+                <a href="">
+                  <div class="info">
+                    <div class="title">Boyhood</div>
+                    <div class="year">2014</div>
+                    <div class="popularity" data-count="22">Want to watch</div>
+                  </div>
+                </a>
+              </figure>
+            </li>
+
+            <li>
+              <figure>
+                <a href="" class="poster">
+                  <img src="temp/tmp-slide-poster-3.png" alt="">
+                </a>
+                <a href="">
+                  <div class="info">
+                    <div class="title">Game of Thrones</div>
+                    <div class="year">2014</div>
+                    <div class="popularity" data-count="99">Want to watch</div>
+                  </div>
+                </a>
+              </figure>
+            </li>
+
+            <li>
+              <figure>
+                <a href="" class="poster">
+                  <img src="temp/tmp-slide-poster-4.png" alt="">
+                </a>
+                <a href="">
+                  <div class="info">
+                    <div class="title">Automata</div>
+                    <div class="year">2014</div>
+                    <div class="popularity" data-count="17">Want to watch</div>
+                  </div>
+                </a>
+              </figure>
+            </li>
+
+            <li>
+              <figure>
+                <a href="" class="poster">
+                  <img src="temp/tmp-slide-poster-5.png" alt="">
+                </a>
+                <a href="">
+                  <div class="info">
+                    <div class="title">Gone Girl</div>
+                    <div class="year">2014</div>
+                    <div class="popularity" data-count="37">Want to watch</div>
+                  </div>
+                </a>
+              </figure>
+            </li>
+
+            <li>
+              <figure>
+                <a href="" class="poster">
+                  <img src="temp/tmp-slide-poster-6.png" alt="">
+                </a>
+                <a href="">
+                  <div class="info">
+                    <div class="title">Gone Girl</div>
+                    <div class="year">2014</div>
+                    <div class="popularity" data-count="3">Want to watch</div>
+                  </div>
+                </a>
+              </figure>
+            </li>
+
+            <li>
+              <figure>
+                <a href="" class="poster">
+                  <img src="temp/tmp-slide-poster-7.png" alt="">
+                </a>
+                <a href="">
+                  <div class="info">
+                    <div class="title">House of cards</div>
+                    <div class="year">2014</div>
+                    <div class="popularity" data-count="10">Want to watch</div>
+                  </div>
+                </a>
+              </figure>
+            </li>
+
+            <li>
+              <figure>
+                <a href="" class="poster">
+                  <img src="temp/tmp-slide-poster-8.png" alt="">
+                </a>
+                <a href="">
+                  <div class="info">
+                    <div class="title">Transformers</div>
+                    <div class="year">2014</div>
+                    <div class="popularity" data-count="22">Want to watch</div>
+                  </div>
+                </a>
+              </figure>
+            </li>
+
+            <li>
+              <figure>
+                <a href="" class="poster">
+                  <img src="temp/tmp-slide-poster-9.png" alt="">
+                </a>
+                <a href="">
+                  <div class="info">
+                    <div class="title">The Grand Budapest Hotel</div>
+                    <div class="year">2014</div>
+                    <div class="popularity" data-count="99">Want to watch</div>
+                  </div>
+                </a>
+              </figure>
+            </li>
+
+            <li>
+              <figure>
+                <a href="" class="poster">
+                  <img src="temp/tmp-slide-poster-a.png" alt="">
+                </a>
+                <a href="">
+                  <div class="info">
+                    <div class="title">WALL-E</div>
+                    <div class="year">2014</div>
+                    <div class="popularity" data-count="17">Want to watch</div>
+                  </div>
+                </a>
+              </figure>
+            </li>
+
+            <li>
+              <figure>
+                <a href="" class="poster">
+                  <img src="temp/tmp-slide-poster-b.png" alt="">
+                </a>
+                <a href="">
+                  <div class="info">
+                    <div class="title">The Equalizer</div>
+                    <div class="year">2014</div>
+                    <div class="popularity" data-count="37">Want to watch</div>
+                  </div>
+                </a>
+              </figure>
+            </li>
+
+            <li>
+              <figure>
+                <a href="" class="poster"><!-- trailer link -->
+                  <img src="temp/tmp-slide-poster-1.png" alt="">
+                </a>
+                <a href=""><!-- movie detail link -->
+                  <div class="info">
+                    <div class="title">Gone Girl</div>
+                    <div class="year">2014</div>
+                    <div class="popularity" data-count="10">Want to watch</div>
+                  </div>
+                </a>
+              </figure>
+            </li>
+
+            <li>
+              <figure>
+                <a href="" class="poster">
+                  <img src="temp/tmp-slide-poster-2.png" alt="">
+                </a>
+                <a href="">
+                  <div class="info">
+                    <div class="title">Boyhood</div>
+                    <div class="year">2014</div>
+                    <div class="popularity" data-count="22">Want to watch</div>
+                  </div>
+                </a>
+              </figure>
+            </li>
+
+            <li>
+              <figure>
+                <a href="" class="poster">
+                  <img src="temp/tmp-slide-poster-3.png" alt="">
+                </a>
+                <a href="">
+                  <div class="info">
+                    <div class="title">Game of Thrones</div>
+                    <div class="year">2014</div>
+                    <div class="popularity" data-count="99">Want to watch</div>
+                  </div>
+                </a>
+              </figure>
+            </li>
+
+            <li>
+              <figure>
+                <a href="" class="poster">
+                  <img src="temp/tmp-slide-poster-4.png" alt="">
+                </a>
+                <a href="">
+                  <div class="info">
+                    <div class="title">Automata</div>
+                    <div class="year">2014</div>
+                    <div class="popularity" data-count="17">Want to watch</div>
+                  </div>
+                </a>
+              </figure>
+            </li>
+
+            <li>
+              <figure>
+                <a href="" class="poster">
+                  <img src="temp/tmp-slide-poster-5.png" alt="">
+                </a>
+                <a href="">
+                  <div class="info">
+                    <div class="title">Walking Dead</div>
+                    <div class="year">2014</div>
+                    <div class="popularity" data-count="37">Want to watch</div>
+                  </div>
+                </a>
+              </figure>
+            </li>
+
+            <li>
+              <figure>
+                <a href="" class="poster">
+                  <img src="temp/tmp-slide-poster-6.png" alt="">
+                </a>
+                <a href="">
+                  <div class="info">
+                    <div class="title">Guardians of the Galaxy</div>
+                    <div class="year">2014</div>
+                    <div class="popularity" data-count="3">Want to watch</div>
+                  </div>
+                </a>
+              </figure>
+            </li>
+
+            <li>
+              <figure>
+                <a href="" class="poster">
+                  <img src="temp/tmp-slide-poster-7.png" alt="">
+                </a>
+                <a href="">
+                  <div class="info">
+                    <div class="title">House of cards</div>
+                    <div class="year">2014</div>
+                    <div class="popularity" data-count="10">Want to watch</div>
+                  </div>
+                </a>
+              </figure>
+            </li>
+
+            <li>
+              <figure>
+                <a href="" class="poster">
+                  <img src="temp/tmp-slide-poster-8.png" alt="">
+                </a>
+                <a href="">
+                  <div class="info">
+                    <div class="title">Transformers</div>
+                    <div class="year">2014</div>
+                    <div class="popularity" data-count="22">Want to watch</div>
+                  </div>
+                </a>
+              </figure>
+            </li>
+
+            <li>
+              <figure>
+                <a href="" class="poster">
+                  <img src="temp/tmp-slide-poster-9.png" alt="">
+                </a>
+                <a href="">
+                  <div class="info">
+                    <div class="title">The Grand Budapest Hotel</div>
+                    <div class="year">2014</div>
+                    <div class="popularity" data-count="99">Want to watch</div>
+                  </div>
+                </a>
+              </figure>
+            </li>
+
+            <li>
+              <figure>
+                <a href="" class="poster">
+                  <img src="temp/tmp-slide-poster-a.png" alt="">
+                </a>
+                <a href="">
+                  <div class="info">
+                    <div class="title">WALL-E</div>
+                    <div class="year">2014</div>
+                    <div class="popularity" data-count="17">Want to watch</div>
+                  </div>
+                </a>
+              </figure>
+            </li>
+
+            <li>
+              <figure>
+                <a href="" class="poster">
+                  <img src="temp/tmp-slide-poster-b.png" alt="">
+                </a>
+                <a href="">
+                  <div class="info">
+                    <div class="title">The Equalizer</div>
+                    <div class="year">2014</div>
+                    <div class="popularity" data-count="37">Want to watch</div>
+                  </div>
+                </a>
+              </figure>
+            </li>
+
+            <li>
+              <figure>
+                <a href="" class="poster">
+                  <img src="temp/tmp-slide-poster-3.png" alt="">
+                </a>
+                <a href="">
+                  <div class="info">
+                    <div class="title">Game of Thrones</div>
+                    <div class="year">2014</div>
+                    <div class="popularity" data-count="99">Want to watch</div>
+                  </div>
+                </a>
+              </figure>
+            </li>
+
+            <li>
+              <figure>
+                <a href="" class="poster">
+                  <img src="temp/tmp-slide-poster-8.png" alt="">
+                </a>
+                <a href="">
+                  <div class="info">
+                    <div class="title">Transformers</div>
+                    <div class="year">2014</div>
+                    <div class="popularity" data-count="22">Want to watch</div>
+                  </div>
+                </a>
+              </figure>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- // List of posters -->
+    </div>
+    
+    <footer>
+      <div class="row">
+
+        <div class="cell logo">
+          <a href="/"><img src="images/gwi-footer-logo.png" height="30"></a>
+        </div>
+
+        <div class="cell about">
+          GoWatchIt is your guide to what's playing and where it's playing. Use GoWatchIt to discover where the movies you
+          want to see are available on the services you care about. Keep track of your movies and receive alerts when they
+          become available.
+        </div>
+
+        <nav class="cell menu">
+          <ul>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Privacy</a></li>
+            <li><a href="/">Terms</a></li>
+            <li><a href="/">Movie Alerts</a></li>
+            <li><a href="/">Press</a></li>
+            <li><a href="/">Jobs</a></li>
+            <li><a href="/">Providers</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="row">
+        <p class="cell">
+          &copy; 2005-2015 <a href="http://www.gowatchit.com/">GoWatchIt</a>
+        </p>
+
+        <p class="cell">
+          Portions of Content Provided by <a href="http://www.rovicorp.com/">Rovi Corporation</a><br>
+          &copy; 2011 Rovi Corporation
+        </p>
+
+        <p class="cell">
+          GoWatchIt is a division of <a href="http://www.gowatchit.com/">Plexus Entertainment</a>
+        </p>
+      </div>
+    </footer>
+    
+  </div>
+ 
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+/* line 5, C:/Projects/GoWatchIt/billydee/mockup/css/footer.scss */
+footer {
+  position: relative;
+  z-index: 2;
+  display: block;
+  padding-bottom: 1em;
+  font-size: 12px;
+  border-top: 2px solid #e84e24;
+  box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.33);
+  background-color: #2e2e2e;
+  color: #ccc; }
+  @media (min-width: 1200px) {
+    footer {
+      display: table;
+      width: 100%;
+      padding-bottom: 50px; } }
+  /* line 21, C:/Projects/GoWatchIt/billydee/mockup/css/footer.scss */
+  footer p {
+    margin: 0.5; }
+  /* line 25, C:/Projects/GoWatchIt/billydee/mockup/css/footer.scss */
+  footer a {
+    white-space: nowrap; }
+    /* line 56, C:/Projects/GoWatchIt/billydee/mockup/css/mixins */
+    footer a, footer a:link {
+      color: #f26a46;
+      text-decoration: none; }
+    /* line 61, C:/Projects/GoWatchIt/billydee/mockup/css/mixins */
+    footer a:hover {
+      color: #f26a46;
+      text-decoration: underline; }
+  @media (min-width: 1200px) {
+    footer .row {
+      display: table-row; } }
+  /* line 35, C:/Projects/GoWatchIt/billydee/mockup/css/footer.scss */
+  footer .row .cell {
+    display: block;
+    padding: 0 30px; }
+    @media (min-width: 1200px) {
+      footer .row .cell {
+        display: table-cell;
+        padding-bottom: 30px; }
+        /* line 41, C:/Projects/GoWatchIt/billydee/mockup/css/footer.scss */
+        footer .row .cell:last-child {
+          text-align: right; } }
+    /* line 47, C:/Projects/GoWatchIt/billydee/mockup/css/footer.scss */
+    footer .row .cell.logo {
+      margin-top: 0.8em; }
+      @media (min-width: 1200px) {
+        footer .row .cell.logo {
+          width: 210px;
+          padding-left: 30px;
+          margin-top: 0; } }
+      /* line 54, C:/Projects/GoWatchIt/billydee/mockup/css/footer.scss */
+      footer .row .cell.logo img {
+        margin: 0.5em 0 0 0; }
+    /* line 60, C:/Projects/GoWatchIt/billydee/mockup/css/footer.scss */
+    footer .row .cell.about {
+      display: none; }
+      @media (min-width: 1200px) {
+        footer .row .cell.about {
+          display: table-cell;
+          max-width: 350px; } }
+    /* line 69, C:/Projects/GoWatchIt/billydee/mockup/css/footer.scss */
+    footer .row .cell.menu {
+      padding-left: 30px;
+      padding-right: 30px; }
+      /* line 73, C:/Projects/GoWatchIt/billydee/mockup/css/footer.scss */
+      footer .row .cell.menu ul {
+        margin: 1.25em -0.3em 1.5em 0;
+        padding: 0;
+        line-height: 2em; }
+        /* line 78, C:/Projects/GoWatchIt/billydee/mockup/css/footer.scss */
+        footer .row .cell.menu ul li {
+          display: inline-block;
+          margin: 0 0.3em; }
+          /* line 82, C:/Projects/GoWatchIt/billydee/mockup/css/footer.scss */
+          footer .row .cell.menu ul li:first-child {
+            margin-left: 0; }
+
+/*# sourceMappingURL=footer.css.map */
