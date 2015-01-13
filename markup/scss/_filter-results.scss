@@ -1,0 +1,132 @@
+
+.filter-results{
+	background: $wrapper-bg;
+	position: relative;
+	z-index: 95;
+	.container{
+		padding-top: 5px;
+		padding-bottom: 6px;
+	}
+	.opener{
+		color: $orange-color-btn;
+		font-size: 14px;
+		line-height: 18px;
+		position: relative;
+		padding: 0 0 0 22px;
+		background: none;
+		border: 0;
+
+		&:before{
+			-webkit-transition: all .3s;
+					transition: all .3s;
+			position: absolute;
+			z-index: 20;
+			top: 1px;
+			left: -1px;
+			height: 14px;
+			content: "+";
+			float: left;
+			font-size: 36px;
+			color: $orange-color-btn;
+		}
+		&:hover{
+			color: $opener-hover-color;
+
+			&:before{
+				color: $opener-hover-color;
+			}
+		}
+	}
+	.collapse-block{
+		background: $collapse-block-bg-color;
+		padding: 0 0 21px;
+		@media (max-width: $grid-float-breakpoint-max){
+			padding: 0;
+			max-height: 300px;
+			overflow-y: auto;
+			border: solid darken($wrapper-bg,10%);
+			border-width: 2px 0;
+			-webkit-box-shadow: 0 3px 3px #000;
+			box-shadow: 0 3px 3px #000;
+		}
+	}
+	.container > .row > .col-md-4,
+	.container > .row > .col-md-8{
+		@media (max-width: $screen-md){
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+	}
+	h3{
+		color: #e6e6e4;
+		text-transform: uppercase;
+		margin: 0;
+		font: 14px/18px $proxima-nova-bold;
+	}
+	ul{
+		list-style: none;
+		margin: 0;
+		padding: 4px 0 0 11px;
+		position: relative;
+		@media (max-width: $grid-float-breakpoint-max){
+			height: auto !important;
+			padding: 0 0 15px;
+		}
+		&:before{
+			content: '';
+			position: absolute;
+			z-index: 20;
+			top: 7px;
+			bottom: 1px;
+			left: 0;
+			width: 1px;
+			background: $gray-dark;
+			@media (max-width: $grid-float-breakpoint-max){
+				display: none;
+			}
+		}
+		li + li{padding: 5px 0 0;}
+		li.sep{
+			padding-top: 27px;
+			@media (max-width: $grid-float-breakpoint-max){
+				padding-top: 20px;
+			}
+		}
+		li.sep-02{
+			padding-top: 22px;
+			@media (max-width: $grid-float-breakpoint-max){
+				padding-top: 0;
+			}
+		}
+		label{
+			font-weight: normal;
+			display: block;
+			overflow: hidden;
+			color: $filter-label-color;
+			margin: 0;
+			max-width: none;
+			font-size: 13px;
+			line-height: 17px;
+			strong{
+				color: $white-color;
+				text-transform: uppercase;
+				font: 13px/17px $proxima-nova-bold;
+			}
+		}
+		.customForm-label-active,
+		.chk-label-active {
+			color: $orange-color;
+			strong{color: $orange-color;}
+		}
+	}
+	&.opened{
+		.opener{
+			&:before{
+				-webkit-transform: rotate(45deg);
+				-ms-transform: rotate(45deg);
+				-o-transform: rotate(45deg);
+				transform: rotate(45deg);
+			}
+		}
+	}
+}

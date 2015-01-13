@@ -1,0 +1,134 @@
+/* alerts */
+.alerts{
+	color: $alerts-color;
+
+	&#main{
+		padding-top: 5px;
+	}
+	.nav-tabs > li > a{
+		min-width: 120px;
+		@media (max-width: $screen-md-max) {
+			min-width: 100px;
+		}
+	}
+	.sort-nav{
+		list-style: none;
+		padding: 0;
+		margin: -1px 0 0 10px;
+		float: right;
+		font-size: 26px;
+
+		> li{
+			float: left;
+			margin-left: 10px;
+			&.active > a{
+				color: $alerts-sort-nav-hover;
+			}
+		}
+		a{
+			color: $alerts-sort-nav-color;
+
+			&:hover{
+				text-align: left;
+				color: $alerts-sort-nav-hover;
+			}
+		}
+		@media (max-width: $screen-md-max) {
+			margin-left: 10px;
+			margin-right: 0;
+			margin-bottom: 10px;
+		}
+	}
+	.check-group{
+		float: right;
+		margin: 2px 0 0 20px;
+
+		label{
+			float: left;
+			font: 12px/24px $proxima-nova-semibold;
+			margin: 0;
+		}
+		@media (max-width: $grid-float-breakpoint-max) {
+			clear: right;
+		}
+	}
+	.checkSwitch{
+		margin-left: 9px;
+	}
+	.header{
+		.btn{
+			float: right;
+			padding: 6px 10px 4px;
+			font: 10px/14px $proxima-nova-semibold;
+			margin-top: 2px;
+
+			@media (max-width: $grid-float-breakpoint-max) {
+				float: left;
+			}
+		}
+		.sort{
+			margin: 2px 0 0 20px;
+			float: right;
+
+			.btn{
+				padding: 6px 38px 4px 10px;
+				margin-top: 0;
+			}
+			@media (max-width: $grid-float-breakpoint-max) {
+				margin-left: 0;
+				float: left;
+
+				.dropdown-menu{
+					right: auto;
+					left: 0;
+				}
+			}
+		}
+		@media (max-width: $screen-md-max) {
+			text-align: center;
+
+			.row{
+
+				> div:first-child{
+					display: inline-block;
+					vertical-align: top;
+					float: none !important;
+				}
+			}
+		}
+		@media (max-width: $screen-sm-max) {
+			.row{
+				> div + div{padding-top: 10px;}
+			}
+		}
+		@media (max-width: $grid-float-breakpoint-max) {
+			.row{
+
+				> div:first-child{
+					display: block;
+				}
+			}
+		}
+	}
+	.table-responsive{
+		margin: 0;
+
+		@media (max-width: $grid-float-breakpoint-max) {
+			border: 1px solid $alerts-list-border-color;
+		}
+	}
+	@media (max-width: $screen-md-max) {
+		.nav-tabs{
+			text-align: center;
+
+			li{
+				display: inline-block;
+				vertical-align: top;
+				float: none;
+			}
+		}
+	}
+	@media (max-width: $grid-float-breakpoint-max) {
+		.nav-tabs > li > a{min-width: 1px;}
+	}
+}

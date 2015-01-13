@@ -1,0 +1,27 @@
+/* custom forms styles */
+.customForm-hidden {
+	display: block !important;
+	position: absolute !important;
+	left:-9999px !important;
+}
+/* custom checkbox styles */
+.chk-area {
+	margin: 3px 9px 0 0;
+	float: left;
+	overflow: hidden;
+	height: 10px;
+	width: 10px;
+	background: $checkbox-bg;
+	border: solid 1px $checkbox-border-color;
+	-webkit-border-radius: $border-radius-100;
+			border-radius: $border-radius-100;
+	-webkit-transition: all .3s;
+			transition: all .3s;
+	span {display: none;}
+	&.chk-checked{
+		background: $orange-color;
+		border: solid 1px $orange-color;
+	}
+}
+.customForm-label-active,
+.chk-label-active {color: $orange-color;}
