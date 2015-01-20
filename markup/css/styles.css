@@ -6054,6 +6054,7 @@ button.close {
       margin-bottom: 6px; }
     @media (max-width: 1024px) {
       .flex-carousel .slides {
+      	-webkit-overflow-scrolling: touch;
         margin-left: 0 !important;
         width: auto !important;
         white-space: nowrap;

@@ -4,6 +4,9 @@ $(document).ready(function(){
 		flexslider2_,
 		flexslider3_,
 		flexslider4_;
+		
+		
+		
 	(function(){
 		$('.carousel-3items').each(function(){
 			$(this).flexslider({
@@ -65,7 +68,8 @@ $(document).ready(function(){
 				move: 1,
 				useCSS:false,
 				minItems: getGridSize4(),
-				maxItems: getGridSize4() 
+				maxItems: getGridSize4(),
+				touch:false
 			});
 			flexslider4_ = $(this).data('flexslider');
 		});
