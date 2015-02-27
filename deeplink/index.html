@@ -1,0 +1,90 @@
+<html>
+    <head>
+    <title>App Deep Links</title>
+    </head>
+    <body>
+        <p>
+            Run each of these on a mobile device, report what happens when the provider's app<br>
+            a) Is not installed<br>
+            b) Is installed<br><br>
+        </p>
+        <p>
+            - If app is not installed, does the device ask to install the app?<br>
+            - If app is installed, does this open the mobile app?<br>
+            - Does it open in a webpage instead of the app?<br>
+            - Does it open to an episode/season/show page? <br>
+            - Does it only go to the app main page?<br>
+        </p>
+        <table cellpadding="5" border="1">
+            <thead>
+                <th>Provider</th>
+                <th>Link</th>
+            </thead>
+            <tr>
+                <td>Amazon Instant</td>
+                <td><a href="aiv://aiv/play?asin=B003M6P3GU">aiv://aiv/play?asin=B003M6P3GU</a></td>
+            </tr>
+            <tr>
+                <td>HBO Go (hbogo://)</td>
+                <td><a href="hbogo://deeplink/ASE.AL/SERIES/GOROSTGP31734/GOROSTGP44864">hbogo://deeplink/ASE.AL/SERIES/GOROSTGP31734/GOROSTGP44864</a></td>
+            </tr>
+            <tr>
+                <td>Hulu/Hulu+</td>
+                <td><a href="hulu://w/748286">hulu://w/748286</a></td>
+            </tr>
+            <tr>
+                <td>iTunes</td>
+                <td><a href="itms://itunes.apple.com/us/tv-season/hooked/id330190364?i=359063560&at=10laHb">itms://itunes.apple.com/us/tv-season/hooked/id330190364?i=359063560&at=10laHb</a></td>
+            </tr>
+            <tr>
+                <td>CBS (full address)</td>
+                <td><a href="cbs://http://www.cbs.com/shows/the_good_wife/video/F1377EA4-BB0D-01AF-60B3-D15F961B3FAC/the-good-wife-the-debate/">cbs://http://www.cbs.com/shows/the_good_wife/video/F1377EA4-BB0D-01AF-60B3-D15F961B3FAC/the-good-wife-the-debate/</a></td>
+            </tr>
+            <tr>
+                <td>CBS (Ext id only)</td>
+                <td><a href="cbs://http://www.cbs.com/F1377EA4-BB0D-01AF-60B3-D15F961B3FAC/">cbs://http://www.cbs.com/F1377EA4-BB0D-01AF-60B3-D15F961B3FAC/</a></td>
+            </tr>
+            <tr>
+                <td>CBS (Show Name + Ext id)</td>
+                <td><a href="cbs://http://www.cbs.com/shows/the_good_wife/video/F1377EA4-BB0D-01AF-60B3-D15F961B3FAC/">cbs://http://www.cbs.com/shows/the_good_wife/video/F1377EA4-BB0D-01AF-60B3-D15F961B3FAC/</a></td>
+            </tr>
+            <tr>
+                <td>Fox Now</td>
+                <td><a href="foxapp://x-callback-url/episode?freewheelid=383498307646">foxapp://x-callback-url/episode?freewheelid=383498307646</a></td>
+            </tr>
+            <tr>
+                <td>Showtime Anywhere</td>
+                <td><a href="shoany://PAGE/t3383638">shoany://PAGE/t3383638</a></td>
+            </tr>
+            <tr>
+                <td>Viacom - Comedy Central</td>
+                <td><a href="ccnetworkapp://episode/df5bb003-ee76-4152-b6c7-75ebc81a1e98">ccnetworkapp://episode/df5bb003-ee76-4152-b6c7-75ebc81a1e98</a></td>
+            </tr>
+ 
+            <tr>
+                <td>Crackle (HTTP)</td>
+                <td><a href="http://www.crackle.com/c/chosen/the-box/2488630">http://www.crackle.com/c/chosen/the-box/2488630</a></td>
+            </tr>
+            <tr>
+                <td>Youtube (HTTP)</td>
+                <td><a href="https://play.google.com/store/movies/details?id=HQ8UkBMWwXo">https://play.google.com/store/movies/details?id=HQ8UkBMWwXo</a></td>
+            </tr>
+            <tr>
+                <td>Amazon (HTTP - For Android?)</td>
+                <td><a href="http://www.amazon.com/gp/product/B003M6P3GU">http://www.amazon.com/gp/product/B003M6P3GU</a></td>
+            </tr>
+            <tr>
+                <td>HBO Go (HTTP - For Android?)</td>
+                <td><a href="http://www.hbogo.com/#series/video&assetID=GOROSTGP43412?videoMode=embeddedVideo/">http://www.hbogo.com/#series/video&assetID=GOROSTGP43412?videoMode=embeddedVideo/</a></td>
+            </tr>
+            <tr>
+                <td>Hulu (HTTP - For Android?)</td>
+                <td><a href="http://www.hulu.com/watch-mobile/732924">http://www.hulu.com/watch-mobile/732924</a></td>
+            </tr>
+            <tr>
+                <td>Google Play (Android)</td>
+                <td><a href="https://play.google.com/store/tv/show?id=yrbz2tXLbJc&cdid=tvseason-HNOjt3NWxdw&gdid=tvepisode-lBOUe9DpFXI">https://play.google.com/store/tv/show?id=yrbz2tXLbJc&cdid=tvseason-HNOjt3NWxdw&gdid=tvepisode-lBOUe9DpFXI</a></td>
+            </tr>
+        </table>
+    </body>
+</html>
