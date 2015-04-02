@@ -1,0 +1,9 @@
+// blur
+@mixin blur ($straight) {
+	-webkit-filter: blur($straight + px);
+	   -moz-filter: blur($straight + px);
+		-ms-filter: blur($straight + px);
+		 -o-filter: blur($straight + px);
+			filter: url(../js/blur.svg#blur#{$straight});
+			filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='$straight');
+}

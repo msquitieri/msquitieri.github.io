@@ -1,0 +1,142 @@
+/* channels-carousel */
+.channels-carousel{
+	position: relative;
+	max-width: 1139px;
+	font-size: 11px;
+	line-height: 14px;
+
+	.slides{
+		list-style: none;
+		padding: 0;
+		margin: 0 -9px 0 0;
+		overflow: hidden;
+
+		> li{
+			float: left;
+			width: 132px;
+			text-align: center;
+			margin-right: 9px;
+
+			figure{
+				border: 1px solid $video-megamenu-border-color;
+				border-radius: $border-radius-base;
+				-webkit-transition: border-color .3s;
+				transition: border-color .3s;
+				background-color: $flex-carousel-bg;
+
+				&:hover{border-color: $orange-color;}
+			}
+			>a{
+				cursor: pointer;
+				color: $gray-dark;
+
+				&:hover{
+					text-decoration: none;
+					color: $orange-color;
+				}
+			}
+			figcaption{
+				padding: 7px 5px;
+			}
+		}
+	}
+	.cell{
+		height: 80px;
+		border-bottom: 1px solid $video-megamenu-border-color;
+		display: table-cell;
+		width: 1%;
+		vertical-align: middle;
+
+		> img{
+			vertical-align: middle;
+			max-width: 100%;
+		}
+	}
+	.flex-direction-nav{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		font-size: 0;
+		line-height: 0;
+
+		a{
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			width: 30px;
+
+			&:before{
+				content: '';
+				position: absolute;
+				top: 50%;
+				background: url(#{$base-images-dir}arrows-flex-carousel.png) no-repeat;
+				width: 10px;
+				height: 17px;
+				margin-top: -8.5px;
+			}
+			&.flex-prev{
+				left: -70px;
+
+				&:before{
+					left: 10px;
+				}
+				&:hover{
+					&:before{
+						background-position: 0 -17px;
+					}
+				}
+				@media (max-width: $screen-md-max){
+					left: 0;
+				}
+			}
+			&.flex-next{
+				right: -70px;
+
+				&:before{
+					right: 10px;
+					background-position: -10px 0;
+				}
+				&:hover{
+					&:before{
+						background-position: -10px -17px;
+					}
+				}
+				&:hover{background-position: -10px -17px;}
+				@media (max-width: $screen-md-max){
+					right: 0;
+				}
+			}
+			&.flex-disabled{display: none;}
+		}
+	}
+	@media (max-width: $screen-md-max) {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+	@media (max-width: $grid-float-breakpoint-max){
+		.cell{
+			display: block;
+			line-height: 36px;
+			height: 36px;
+			overflow: hidden;
+			width: auto;
+			border: 0;
+			padding: 2px 5px;
+			vertical-align: bottom;
+		}
+		.cell img{
+			max-width: 85%;
+			max-height: 100%;
+		}
+		.slides {
+			.hidden-xs {
+				display: none !important;
+			}
+			figcaption{
+				padding: 7px 5px;
+				font-size: 9px;
+				line-height: 10px;
+			}
+		}
+	}
+}

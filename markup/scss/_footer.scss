@@ -1,0 +1,136 @@
+/* footer */
+#footer{
+	border-top: 2px solid $footer-border-color;
+	background-color: $footer-bg-color;
+	font-size: $footer-font-size;
+	line-height: $footer-line-height;
+	color: $footer-text-color;
+	padding: 13px 0 23px;
+	@media (max-width:($screen-sm - 1)){
+		text-align: center;
+		padding: 14px 0 5px;
+	}
+
+	.logo{
+		@extend .navbar-brand;
+		background: url(#{$base-images-dir}logo-footer.png) no-repeat;
+		font-size: 16px;
+		padding-left: 40px;
+		margin: -1px 0 0;
+		color: $link-color;
+
+		&:hover{
+			color: darken($link-color, 20%);
+		}
+		@media (max-width: $screen-md-max){
+			margin-bottom: 12px;
+		}
+		@media (max-width:($screen-sm - 1)){
+			background: url(#{$base-images-dir}logo-footer-mobile.png) no-repeat 50% 0;
+			font-size: 18px;
+			line-height: 22px;
+			padding-left: 40px;
+			padding: 48px 0 0;
+			margin: 0 auto 16px;
+			color: $white-color;
+			width: 100px;
+			float: none;
+			display: block;
+			height: auto;
+			text-align: center;
+		}
+	}
+	p{
+		margin: 0;
+	}
+	.nav-pills{
+		> li{
+			@media (max-width:($screen-sm - 1)){
+				display: inline-block;
+				vertical-align: top;
+				margin: 0 2px;
+				float: none;
+				border: 0;
+				font-size: 10px;
+				line-height: 14px;
+			}
+			+ li{margin-left: 14px;}
+			>a{
+				padding: 0;
+				border-radius: 0;
+				&:hover{
+					background-color: transparent;
+				}
+				@media (max-width: $screen-sm-max) {
+					padding: 5px -0px;
+					&:hover{
+						color: $orange-color;
+					}
+				}
+			}
+			@media (max-width:($screen-sm - 1)){
+				margin: 0 2px;
+				+ li{margin-left: 2px;}
+			}
+		}
+		@media (max-width:($screen-sm - 1)){
+			text-align: center;
+			margin: 0 5px;
+			padding: 15px 0;
+			border-bottom: solid 1px $color-gray-02;
+		}
+	}
+	.row + .row{
+		margin-top: 51px;
+		@media (max-width: $screen-md-max) {
+			margin-top: 25px;
+		}
+		@media (max-width: $screen-sm-max) {
+			margin-top: 12px;
+		}
+	}
+	.mibile-nav{
+		padding: 0 0 19px;
+		margin: 0 0 24px;
+		border-bottom: solid 1px $color-gray-02;
+		text-align: center;
+		> ul{
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			> li{
+				display: table-cell;
+				vertical-align: top;
+				width: 1%;
+				font-size: 10px;
+				line-height: 14px;
+				text-align: center;
+				> a{
+					color: $white-color;
+					&:hover{
+						color: $orange-color;
+					}
+				}
+			}
+		}
+	}
+	.mobile-info{
+		font-size: 10px;
+		line-height: 14px;
+		text-align: center;
+		p{
+			margin: 0 0 20px;
+		}
+		.block{
+			padding: 0 30px 2px;
+			margin: 0 0 20px;
+			border-bottom: solid 1px $color-gray-02;
+		}
+		.box{
+			padding: 0 0 14px;
+			p{
+				margin: 0;
+			}
+		}
+	}
+}

@@ -1,0 +1,80 @@
+.search-form{
+	width: $search-form-width;
+
+	.input-group-btn:last-child > .btn,
+	.input-group-btn:last-child > .btn-group {
+		margin-left: 1px;
+	}
+	.dropdown{
+		display: inline-block;
+		vertical-align: top;
+		margin-left: 1px;
+
+		.btn{
+			border-radius: 0;
+		}
+		&.open{
+			.dropdown-toggle{
+				&:after{
+					background-position: 0 -6px;
+				}
+			}
+		}
+	}
+	.dropdown-toggle{
+		font-family: $font-family-base;
+		min-width: 100px;
+		position: relative;
+		padding-right: 30px;
+		text-align: left;
+
+		&:after{
+			content: '';
+			background: url(#{$base-images-dir}caret-dropdown.png) no-repeat;
+			position: absolute;
+			top: 50%;
+			right: 10px;
+			vertical-align: top;
+			width: 10px;
+			height: 6px;
+			margin: -2px 0 0 -5px;
+		}
+		&:hover:after{
+			background-position: 0 -6px;
+		}
+		@media (max-width: $screen-sm-max){
+			width: 100%;
+			min-width: 1px;
+			padding-right: 24px;
+			padding-left: 5px;
+		}
+	}
+	.btn{
+		text-transform: none;
+		min-height: 40px;
+	}
+	.btn-primary{
+		width: 100px;
+		@media (max-width: $screen-sm-max){
+			padding-left: 0;
+			padding-right: 0;
+			width: 50px;
+		}
+	}
+	.form-control{
+		@media (max-width: $screen-sm-max){
+			padding-left: 5px;
+			padding-right: 5px;
+		}
+	}
+	@media (max-width: $screen-sm-max){
+		width: 100%;
+		.dropdown-menu{
+			min-width: 180px;
+			width: 180px;
+		}
+	}
+	@media (max-width:($screen-sm - 1)){
+		display: none;
+	}
+}
