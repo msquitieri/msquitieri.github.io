@@ -37,7 +37,7 @@
 					<li class="active"><a href="#">Your Alerts</a></li>
 					<li><a href="#">Your Profile</a></li>
 					<li><a href="#">Log Out</a></li>
-					<li class="search"><a href="#" class="glyphicon glyphicon-search"></a></li>
+					<li class="search"><a href="search-results.html" class="glyphicon glyphicon-search"></a></li>
 				</ul>
 				<p class="user hidden-xs">Welcome Back, <span>David</span></p>
 			</div>
@@ -46,43 +46,6 @@
 					<div class="mobile-search">
 						<form action="#">
 							<input placeholder="What would you like to watch?" type="text" class="form-control">
-							<button type="button" class="navbar-toggle drop-opener collapsed" data-toggle="collapse" data-target="#genre" aria-expanded="false" aria-controls="navbar">Genre<span class="arrow">&nbsp;</span></button>
-							<div class="navbar-collapse collapse" id="genre">
-								<ul class="genres">
-									<li><a href="#">Action &amp; Adventure</a></li>
-									<li><a href="#">Anime</a></li>
-									<li><a href="#">Children &amp; Family</a></li>
-									<li class="active"><a href="#">Classics</a></li>
-									<li><a href="#">Comedies</a></li>
-									<li><a href="#">Cult Movies</a></li>
-									<li><a href="#">Documentaries</a></li>
-									<li><a href="#">Dramas</a></li>
-									<li><a href="#">Faith</a></li>
-									<li><a href="#">Foreign</a></li>
-									<li><a href="#">Gay &amp; Lesbian</a></li>
-									<li><a href="#">Horror</a></li>
-									<li><a href="#">Independent</a></li>
-									<li><a href="#">Music</a></li>
-									<li><a href="#">Musicals</a></li>
-									<li><a href="#">Romance</a></li>
-									<li><a href="#">Sci-Fi &amp; Fantasy</a></li>
-									<li><a href="#">Sport Movies</a></li>
-									<li><a href="#">Thrillers</a></li>
-								</ul><!-- end genres -->
-							</div>
-							<button type="button" class="navbar-toggle drop-opener collapsed" data-toggle="collapse" data-target="#services" aria-expanded="false" aria-controls="navbar">Services<span class="arrow">&nbsp;</span></button>
-							<div class="navbar-collapse collapse" id="services">
-								<ul class="services-list">
-									<li><a href="#"><img src="images/img15.jpg" alt="image"></a></li>
-									<li><a href="#"><img src="images/img16.jpg" alt="image"></a></li>
-									<li><a href="#"><img src="images/img17.jpg" alt="image"></a></li>
-									<li><a href="#"><img src="images/img18.jpg" alt="image"></a></li>
-									<li><a href="#"><img src="images/img19.jpg" alt="image"></a></li>
-									<li><a href="#"><img src="images/img20.jpg" alt="image"></a></li>
-									<li><a href="#"><img src="images/img21.jpg" alt="image"></a></li>
-									<li><a href="#"><img src="images/img22.jpg" alt="image"></a></li>
-								</ul><!-- end services-list -->
-							</div>
 							<input value="Search" class="btn btn-primary" type="submit">
 						</form>
 					</div><!-- end mobile-search -->
@@ -90,7 +53,7 @@
 			</div><!-- end search-holder -->
 		</div>
 	</nav><!-- navbar -->
-	<header id="header">
+	<header id="header" class="home-slideshow">
 		<div id="main-slideshow" class="main-slideshow carousel slide carousel-fade" data-ride="carousel" data-interval="5000">
 			<div class="carousel-inner" role="listbox">
 				<figure class="item active">
@@ -151,43 +114,138 @@
 		</div>
 		<div class="search-form">
 			<form action="#">
-				<div class="input-group">
-					<input type="search" class="form-control" placeholder="What would you like to watch?">
-					<div class="input-group-btn">
-						<div class="dropdown">
-							<a href="#" class="dropdown-toggle btn btn-default" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">Genre</a>
-							<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-								<li><a href="#">Action &amp; Adventure</a></li>
-								<li><a href="#">Anime</a></li>
-								<li><a href="#">Children &amp; Family</a></li>
-								<li><a href="#">Classics</a></li>
-								<li><a href="#">Comedy</a></li>
-								<li><a href="#">Cult Movies</a></li>
-								<li><a href="#">Documentaries</a></li>
-								<li><a href="#">Action &amp; Adventure</a></li>
-								<li><a href="#">Anime</a></li>
-								<li><a href="#">Children &amp; Family</a></li>
-								<li><a href="#">Classics</a></li>
-								<li><a href="#">Comedy</a></li>
-								<li><a href="#">Cult Movies</a></li>
-								<li><a href="#">Documentaries</a></li>
-							</ul>
-						</div>
-						<div class="dropdown">
-							<a href="#" class="dropdown-toggle btn btn-default" id="dropdownMenu2" data-toggle="dropdown" aria-expanded="true">Service</a>
-							<ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dropdownMenu2">
-								<li><a href="#">Lorem ipsum.</a></li>
-								<li><a href="#">Children &amp; Family</a></li>
-								<li><a href="#">Classics</a></li>
-								<li><a href="#">Comedy</a></li>
-							</ul>
-						</div>
-						<input type="submit" class="btn btn-primary" value="Search">
-					</div>
-				</div>
+				<input type="search" class="form-control" placeholder="What would you like to watch?">
+				<input type="submit" class="btn btn-primary" value="Search">
 			</form>
 		</div>
 	</header><!-- / header -->
+	<div class="genre-bar">
+		<div class="item">
+			<a href="#">Action &amp; Adventure</a>
+		</div><!-- end item -->
+		<div class="item">
+			<a href="#">Anime</a>
+		</div><!-- end item -->
+		<div class="item">
+			<a href="#">Children &amp; Family</a>
+		</div><!-- end item -->
+		<div class="item">
+			<a href="#">Classics</a>
+		</div><!-- end item -->
+		<div class="item">
+			<a href="#">Comedies</a>
+		</div><!-- end item -->
+		<div class="item">
+			<a href="#">Cult Movies</a>
+		</div><!-- end item -->
+		<div class="item">
+			<a href="#">Documentaries</a>
+		</div><!-- end item -->
+		<div class="item">
+			<a href="#">Dramas</a>
+		</div><!-- end item -->
+		<div class="item">
+			<a href="#">Faith</a>
+		</div><!-- end item -->
+		<div class="item">
+			<a href="#">Foreign</a>
+		</div><!-- end item -->
+		<div class="item">
+			<a href="#">Gay &amp; Lesbian</a>
+		</div><!-- end item -->
+		<div class="item">
+			<a href="#">Horror</a>
+		</div><!-- end item -->
+		<div class="item">
+			<a href="#">Independent</a>
+		</div><!-- end item -->
+		<div class="item">
+			<a href="#">Music</a>
+		</div><!-- end item -->
+		<div class="item">
+			<a href="#">Musicals</a>
+		</div><!-- end item -->
+		<div class="item">
+			<a href="#">Romance</a>
+		</div><!-- end item -->
+		<div class="item">
+			<a href="#">Sci-Fi &amp; Fantasy</a>
+		</div><!-- end item -->
+		<div class="item">
+			<a href="#">Sport Movies</a>
+		</div><!-- end item -->
+		<div class="item">
+			<a href="#">Thrillers</a>
+		</div><!-- end item -->
+	</div><!-- end genre-bar -->
+	<div class="services-bar">
+		<div class="item">
+			<a href="#"><span><em><img src="images/chan-logo01.png" alt="image description"></em></span></a>
+		</div><!-- end item -->
+		<div class="item">
+			<a href="#"><span><em><img src="images/chan-logo02.png" alt="image description"></em></span></a>
+		</div><!-- end item -->
+		<div class="item">
+			<a href="#"><span><em><img src="images/chan-logo03.png" alt="image description"></em></span></a>
+		</div><!-- end item -->
+		<div class="item">
+			<a href="#"><span><em><img src="images/chan-logo04.png" alt="image description"></em></span></a>
+		</div><!-- end item -->
+		<div class="item">
+			<a href="#"><span><em><img src="images/chan-logo05.png" alt="image description"></em></span></a>
+		</div><!-- end item -->
+		<div class="item">
+			<a href="#"><span><em><img src="images/chan-logo06.png" alt="image description"></em></span></a>
+		</div><!-- end item -->
+		<div class="item">
+			<a href="#"><span><em><img src="images/chan-logo07.png" alt="image description"></em></span></a>
+		</div><!-- end item -->
+		<div class="item">
+			<a href="#"><span><em><img src="images/chan-logo08.png" alt="image description"></em></span></a>
+		</div><!-- end item -->
+		<div class="item">
+			<a href="#"><span><em><img src="images/chan-logo06.png" alt="image description"></em></span></a>
+		</div><!-- end item -->
+		<div class="item">
+			<a href="#"><span><em><img src="images/chan-logo04.png" alt="image description"></em></span></a>
+		</div><!-- end item -->
+		<div class="item">
+			<a href="#"><span><em><img src="images/chan-logo04.png" alt="image description"></em></span></a>
+		</div><!-- end item -->
+		<div class="item">
+			<a href="#"><span><em><img src="images/chan-logo01.png" alt="image description"></em></span></a>
+		</div><!-- end item -->
+		<div class="item">
+			<a href="#"><span><em><img src="images/chan-logo02.png" alt="image description"></em></span></a>
+		</div><!-- end item -->
+		<div class="item">
+			<a href="#"><span><em><img src="images/chan-logo03.png" alt="image description"></em></span></a>
+		</div><!-- end item -->
+		<div class="item">
+			<a href="#"><span><em><img src="images/chan-logo04.png" alt="image description"></em></span></a>
+		</div><!-- end item -->
+		<div class="item">
+			<a href="#"><span><em><img src="images/chan-logo05.png" alt="image description"></em></span></a>
+		</div><!-- end item -->
+		<div class="item">
+			<a href="#"><span><em><img src="images/chan-logo06.png" alt="image description"></em></span></a>
+		</div><!-- end item -->
+		<div class="item">
+			<a href="#"><span><em><img src="images/chan-logo07.png" alt="image description"></em></span></a>
+		</div><!-- end item -->
+		<div class="item">
+			<a href="#"><span><em><img src="images/chan-logo08.png" alt="image description"></em></span></a>
+		</div><!-- end item -->
+		<div class="item">
+			<a href="#"><span><em><img src="images/chan-logo06.png" alt="image description"></em></span></a>
+		</div><!-- end item -->
+		<div class="item">
+			<a href="#"><span><em><img src="images/chan-logo04.png" alt="image description"></em></span></a>
+		</div><!-- end item -->
+		<div class="item">
+			<a href="#"><span><em><img src="images/chan-logo04.png" alt="image description"></em></span></a>
+		</div><!-- end item -->
+	</div><!-- end services-bar -->
 	<div id="main">
 		<div class="container container-space-big">
 			<header class="headline">
@@ -2529,6 +2587,7 @@
 <script src="js/custom-form.checkbox.js"></script>
 <script src="js/equal-height.js"></script>
 <script src="js/checkswitch.js"></script>
+<script src="js/slick.js"></script>
 <script src="js/scripts.js"></script>
 </body>
 </html>

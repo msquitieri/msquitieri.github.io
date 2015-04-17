@@ -110,11 +110,14 @@
 }
 .sort{
 	float: right;
-	margin: 5px 0 0;
+	margin: 5px 0 8px;
 	@media (max-width: $grid-float-breakpoint-max){
 		float: none;
 		margin: 0 auto;
 		width: 108px;
+	}
+	@media (max-width:($screen-sm - 1)){
+		margin-top: 15px;
 	}
 	.btn{
 		padding: 7px 38px 7px 10px;

@@ -39,7 +39,7 @@
 	}
 	.collapse-block{
 		background: $collapse-block-bg-color;
-		padding: 0 0 21px;
+		padding: 0 0 4px;
 		@media (max-width: $grid-float-breakpoint-max){
 			padding: 0;
 			max-height: 300px;
@@ -48,6 +48,9 @@
 			border-width: 2px 0;
 			-webkit-box-shadow: 0 3px 3px #000;
 			box-shadow: 0 3px 3px #000;
+		}
+		@media (max-width:($screen-sm - 1)){
+			padding: 0 0 3px;
 		}
 	}
 	.container > .row > .col-md-4,
@@ -168,6 +171,9 @@
 					color: $white-color;
 				}
 			}
+			@media (max-width:($screen-sm - 1)){
+				display: none;
+			}
 		}
 		&.opened{
 			.opener{
@@ -260,6 +266,9 @@
 						}
 					}
 				}
+			}
+			@media (max-width:($screen-sm - 1)){
+				display: block !important;
 			}
 		}
 		.col-sm-3{

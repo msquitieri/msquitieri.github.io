@@ -1,0 +1,95 @@
+.genre-bar{
+	position: relative;
+	padding: 11px 0;
+	margin: 0 31px;
+	@media (max-width:($screen-sm - 1)){
+		padding: 13px 0;
+		margin: 0;
+	}
+	.slick-list{
+		display: block;
+		position: relative;
+		overflow: hidden;
+		.slick-track{
+			display: block;
+			position: relative;
+			overflow: hidden;
+			top: 0;
+			left: 0;
+			.slick-slide{
+				float: left;
+				min-height: 1px;
+				font-size: 14px;
+				line-height: 18px;
+				padding: 0 20px 0 0;
+				@media (max-width:($screen-sm - 1)){
+					padding: 0 10px;
+				}
+				a{
+					float: left;
+					color: #5e5e5c;
+					padding: 5px 10px;
+					position: relative;
+					-webkit-border-radius: 8px;
+							border-radius: 8px;
+					&:hover,
+					&.active{
+						text-decoration: none;
+						color: $white-color;
+						background: $genre-link-hover;
+					}
+				}
+			}
+		}
+	}
+	.slick-prev,
+	.slick-next{
+		position: absolute;
+		top: 50%;
+		width: 25px;
+		height: 25px;
+		z-index: 30;
+		border: 0;
+		background: none;
+		margin: -13px 0 0;
+		overflow: hidden;
+		text-indent: -9999px;
+		&:before{
+			content: '';
+			position: absolute;
+			top: 50%;
+			background: url(#{$base-images-dir}arrows-scroll-bars.png) no-repeat;
+			width: 10px;
+			height: 17px;
+			margin-top: -8.5px;
+		}
+		&.slick-disabled{display: none;}
+		@media (max-width:($screen-sm - 1)){
+			display: none;
+		}
+	}
+	.slick-prev{
+		left: -34px;
+		&:before{
+			left: 10px;
+		}
+		&:hover{
+			&:before{
+				background-position: 0 -17px;
+			}
+		}
+	}
+	.slick-next{
+		right: -34px;
+		&:before{
+			right: 10px;
+			background-position: -10px 0;
+		}
+		&:hover{
+			&:before{
+				background-position: -10px -17px;
+			}
+		}
+		&:hover{background-position: -10px -17px;}
+	}
+}

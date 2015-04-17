@@ -1,5 +1,6 @@
 /* header */
-#header{
+#header,
+.home-slideshow{
 	width:100%;
 	position:relative;
 	min-height: $navbar-height;
@@ -45,23 +46,6 @@
 		}
 	}
 
-	.search-form{
-		position: absolute;
-		bottom: 25px;
-		left: 50%;
-		z-index: 7;
-		margin-left: -$search-form-width/2;
-
-		@media (max-width: $screen-md-max) {
-			bottom: 10px;
-		}
-		@media (max-width: $screen-sm-max) {
-			margin-left: 0;
-			left: 5px;
-			right: 5px;
-			width: auto;
-		}
-	}
 	.img{
 		border-bottom: 1px solid #60605c;
 		overflow: hidden;

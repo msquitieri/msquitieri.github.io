@@ -42,8 +42,8 @@
 				-webkit-border-radius: 0 0 5px 5px;
 						border-radius: 0 0 5px 5px;
 				color: $white-color;
-				font-size: 8px;
-				line-height: 10px;
+				font-size: 10px;
+				line-height: 12px;
 				padding: 4px 2px 3px;
 			}
 		}
@@ -260,7 +260,7 @@
 				padding-bottom: 10px;
 				color: $flex-carousel-color2;
 				@media (max-width:($screen-sm - 1)){
-					padding: 1px 4px;
+					padding: 5px 4px 3px;
 				}
 				> a{
 					color: $flex-carousel-color2;
@@ -273,15 +273,15 @@
 					font-size: 14px;
 					line-height: 18px;
 					@media (max-width:($screen-sm - 1)){
-						font-size: 6px;
-						line-height: 9px;
-						margin: 0 0 -3px;
+						font-size: 10px;
+						line-height: 12px;
+						margin: 0 0 1px;
 					}
 				}
 				.year{
 					@media (max-width:($screen-sm - 1)){
-						font-size: 6px;
-						line-height: 9px;
+						font-size: 10px;
+						line-height: 12px;
 						margin: 0;
 					}
 				}

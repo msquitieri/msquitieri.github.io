@@ -5,6 +5,38 @@
 	.input-group-btn:last-child > .btn-group {
 		margin-left: 1px;
 	}
+	position: absolute;
+	bottom: 25px;
+	left: 50%;
+	z-index: 7;
+	margin-left: -$search-form-width/2;
+
+	@media (max-width: $screen-md-max) {
+		bottom: 10px;
+	}
+	@media (max-width: $screen-sm-max) {
+		margin-left: 0;
+		left: 5px;
+		right: 5px;
+		width: auto;
+		&.home-search{
+			width: 602px;
+		}
+	}
+	&.home-search{
+		.form-control{
+			float: left;
+			width: 501px;
+			-webkit-border-radius: 5px 0 0 5px;
+					border-radius: 5px 0 0 5px;
+		}
+		.btn{
+			float: right;
+			-webkit-border-radius: 0 5px 5px 0;
+					border-radius: 0 5px 5px 0;
+			width: 100px;
+		}
+	}
 	.dropdown{
 		display: inline-block;
 		vertical-align: top;
@@ -54,17 +86,19 @@
 		min-height: 40px;
 	}
 	.btn-primary{
+		float: right;
 		width: 100px;
-		@media (max-width: $screen-sm-max){
-			padding-left: 0;
-			padding-right: 0;
-			width: 50px;
-		}
+		-webkit-border-radius: 0 $border-radius-base $border-radius-base 0;
+		border-radius: 0 $border-radius-base $border-radius-base 0;
 	}
 	.form-control{
-		@media (max-width: $screen-sm-max){
-			padding-left: 5px;
-			padding-right: 5px;
+		float: left;
+		margin: 0;
+		width: 501px;
+		-webkit-border-radius: $input-border-radius 0 0 $input-border-radius;
+		border-radius: $input-border-radius 0 0 $input-border-radius;
+		@media (max-width: $grid-float-breakpoint-max){
+			width: 191px;
 		}
 	}
 	@media (max-width: $screen-sm-max){
@@ -72,6 +106,15 @@
 		.dropdown-menu{
 			min-width: 180px;
 			width: 180px;
+		}
+	}
+	@media (max-width:($screen-md - 1)){
+		width: 400px;
+		bottom: 20px;
+		right: 10px;
+		left: auto;
+		.form-control{
+			width: 299px;
 		}
 	}
 	@media (max-width:($screen-sm - 1)){

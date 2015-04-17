@@ -1,0 +1,118 @@
+.services-bar{
+	position: relative;
+	padding: 13px 28px 12px;
+	background: $bg-services-bar;
+	@media (max-width:($screen-md - 1)){
+		padding-left: 23px;
+		padding-right: 23px;
+	}
+	@media (max-width:($screen-sm - 1)){
+		background: $bg-services-bar-mobile;
+		padding: 5px 0 15px;
+	}
+	.slick-list{
+		display: block;
+		position: relative;
+		overflow: hidden;
+		.slick-track{
+			display: block;
+			position: relative;
+			overflow: hidden;
+			top: 0;
+			left: 0;
+			.slick-slide{
+				float: left;
+				min-height: 1px;
+				padding: 0 14px;
+				width: 120px;
+				@media (max-width:($screen-sm - 1)){
+					padding: 0 5px;
+					width: 102px;
+				}
+				a{
+					display: block;
+					position: relative;
+					-webkit-border-radius: 3px;
+							border-radius: 3px;
+					background: $services-bar-item-bg;
+					border: solid 1px $color-gray-04;
+					padding: 5px;
+					width: 92px;
+					height: 43px;
+					&:hover{
+						text-decoration: none;
+						color: $white-color;
+						border: solid 1px $services-bar-hover-item;
+					}
+					span{
+						display: table;
+						width: 100%;
+						height: 100%;
+						em{
+							font-style: normal;
+							display: table-cell;
+							vertical-align: middle;
+							text-align: center;
+							img{
+								width: 100%;
+								max-width: 70%;
+								max-height: 100% !important;
+								vertical-align: middle;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.slick-prev,
+	.slick-next{
+		position: absolute;
+		top: 50%;
+		width: 25px;
+		height: 25px;
+		z-index: 30;
+		border: 0;
+		background: none;
+		margin: -12px 0 0;
+		overflow: hidden;
+		text-indent: -9999px;
+		&:before{
+			content: '';
+			position: absolute;
+			top: 50%;
+			background: url(#{$base-images-dir}arrows-scroll-bars.png) no-repeat;
+			width: 10px;
+			height: 17px;
+			margin-top: -8.5px;
+		}
+		&.slick-disabled{display: none;}
+		@media (max-width:($screen-sm - 1)){
+			display: none;
+		}
+	}
+	.slick-prev{
+		left: -2px;
+		&:before{
+			left: 10px;
+		}
+		&:hover{
+			&:before{
+				background-position: 0 -17px;
+			}
+		}
+	}
+	.slick-next{
+		right: -2px;
+		&:before{
+			right: 10px;
+			background-position: -10px 0;
+		}
+		&:hover{
+			&:before{
+				background-position: -10px -17px;
+			}
+		}
+		&:hover{background-position: -10px -17px;}
+	}
+}

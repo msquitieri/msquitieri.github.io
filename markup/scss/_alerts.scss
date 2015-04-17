@@ -142,66 +142,71 @@
 				> div + div{padding-top: 0;}
 			}
 		}
-		.filter-by-category{
-			.opener{
-				background: $drop-opener-color;
-				color: $alerts-header-opener-color;
-				cursor: pointer;
-				position: relative;
-				border-radius: 5px;
-				-webkit-box-shadow: inset 0 1px 0 #595957;
-				box-shadow: inset 0 1px 0 #595957;
+	}
+}
+.filter-by-category{
+	.opener{
+		background: $drop-opener-color;
+		color: $alerts-header-opener-color;
+		cursor: pointer;
+		position: relative;
+		border-radius: 5px;
+		-webkit-box-shadow: inset 0 1px 0 #595957;
+		box-shadow: inset 0 1px 0 #595957;
+		text-align: left;
+		font-size: 20px;
+		line-height: 28px;
+		padding: 16px 34px 16px 14px;
+		-ms-text-overflow: ellipsis;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+		&:before{
+			content: '';
+			position: absolute;
+			right: 15px;
+			top: 50%;
+			border: 7px solid transparent;
+			border-top:7px solid #747472;
+			margin: -3px 0 0;
+		}
+		&:after {
+			content: '';
+			position: absolute;
+			right: 16px;
+			top: 50%;
+			border: 6px solid transparent;
+			border-top:6px solid #424240;
+			margin: -4px 0 0;
+		}
+		
+	}
+	.categories-nav{
+		padding-top: 5px;
+		padding-bottom: 0;
+	}
+	@media (max-width: $grid-float-breakpoint-max) {
+		padding: 0 15px;
+		.nav-tabs{
+			display: none;
+			background: $drop-opener-color;
+			padding: 0;
+			border-radius: 5px;
+			li{
 				text-align: left;
-				font-size: 20px;
-				line-height: 28px;
-				padding: 16px 34px 16px 14px;
-				-ms-text-overflow: ellipsis;
-				text-overflow: ellipsis;
-				white-space: nowrap;
-				overflow: hidden;
-				&:before{
-					content: '';
-					position: absolute;
-					right: 15px;
-					top: 50%;
-					border: 7px solid transparent;
-					border-top:7px solid #747472;
-					margin: -3px 0 0;
+				display: block;
+				float: none;
+				> a{
+					padding: 10px 14px;
 				}
-				&:after {
-					content: '';
-					position: absolute;
-					right: 16px;
-					top: 50%;
-					border: 6px solid transparent;
-					border-top:6px solid #424240;
-					margin: -4px 0 0;
+				&.active,
+				&:focus{
+					>a{border-bottom: 0;}
 				}
-				
-			}
-			@media (max-width: $grid-float-breakpoint-max) {
-				padding: 0 15px;
-				.nav-tabs{
-					display: none;
-					background: $drop-opener-color;
-					padding: 0;
-					border-radius: 5px;
-					li{
-						text-align: left;
-						display: block;
-						> a{
-							padding: 10px 14px;
-						}
-						&.active,
-						&:focus{
-							>a{border-bottom: 0;}
-						}
-					}
-				}
-			}
-			@media (min-width: $grid-float-breakpoint-max + 1) {
-				.nav-tabs{display: block !important;}
 			}
 		}
+	}
+	@media (min-width: $grid-float-breakpoint-max + 1) {
+		.nav-tabs{display: block !important;}
 	}
 }

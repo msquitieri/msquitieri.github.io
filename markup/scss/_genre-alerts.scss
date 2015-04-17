@@ -1,0 +1,48 @@
+.genre-alerts{
+	padding: 5px 0 4px;
+	border-bottom: solid 1px $alert-item-border;
+	position: relative;
+	overflow: hidden;
+	@media (max-width:($screen-sm - 1)){
+		padding: 8px 0 5px;
+		border: 0;
+	}
+	.slick-list{
+		display: block;
+		position: relative;
+		overflow: hidden;
+	}
+	.slick-track{
+		display: block;
+		position: relative;
+		overflow: hidden;
+		top: 0;
+		left: 0;
+	}
+	.slick-slide{
+		float: left;
+		min-height: 1px;
+	}
+	.item{
+		float: left;
+		padding: 0 8px 8px 0;
+		a{
+			display: inline-block;
+			vertical-align: top;
+			color: $white-color;
+			-webkit-border-radius: 7px;
+					border-radius: 7px;
+			position: relative;
+			border: solid 1px $alert-item-border;
+			font: 13px/18px $proxima-nova-bold;
+			padding: 4px 9px;
+			&:hover{
+				text-decoration: none;
+			}
+			&.active{
+				background: $orange-color;
+				border: solid 1px $orange-color;
+			}
+		}
+	}
+}

@@ -339,32 +339,96 @@ $(document).ready(function(){
 		};
 	});
 	$('.info-block .meta li:last-child').addClass('last-child');
-	(function(){
-		var parent_ = $('.watch-ways .ways-tabs'),
-			btn_ = $('.watch-ways .ways-tabs .opener'),
-			drop_ = $('.watch-ways .ways-tabs .nav'),
-			dropLink_ = $('.watch-ways .ways-tabs .nav a');
-			btn_.html(drop_.find('.active > a').html());
-		btn_.click(function(){
-			if (parent_.hasClass('open')) {
-				parent_.removeClass('open');
-				drop_.slideUp(300, function(){});
-			} else{
-				parent_.addClass('open');
-				drop_.slideDown(300, function(){});
-			};
+	if(($window).width() < 768){
+		(function(){
+			var parent_ = $('.watch-ways .ways-tabs'),
+				btn_ = $('.watch-ways .ways-tabs .opener'),
+				drop_ = $('.watch-ways .ways-tabs .nav'),
+				dropLink_ = $('.watch-ways .ways-tabs .nav a');
+				btn_.html(drop_.find('.active > a').html());
+			btn_.click(function(){
+				if (parent_.hasClass('open')) {
+					parent_.removeClass('open');
+					drop_.slideUp(300, function(){});
+				} else{
+					parent_.addClass('open');
+					drop_.slideDown(300, function(){});
+				};
+			});
+			dropLink_.click(function(){
+				var this_ = $(this),
+					par_ = this_.parent('li'),
+					text_ = this_.html();
+				if (!par_.hasClass('active')) {
+					drop_.slideUp(300, function(){});
+					btn_.html(text_);
+					parent_.removeClass('open');
+				};
+			});
+		})();
+	}
+	$('.genre-bar').slick({
+		dots: false,
+		infinite: true,
+		speed: 300,
+		slidesToShow: 15,
+		slidesToScroll: 2,
+		centerMode: false,
+		variableWidth: true,
+		responsive: [
+			{
+				breakpoint: 767,
+				settings: {
+					arrows: false
+				}
+			}
+		]
+	});
+	$('.services-bar').slick({
+		dots: false,
+		infinite: true,
+		speed: 300,
+		slidesToShow: 11,
+		slidesToScroll: 2,
+		centerMode: false,
+		variableWidth: true,
+		responsive: [
+			{
+				breakpoint: 767,
+				settings: {
+					arrows: false
+				}
+			}
+		]
+	});
+	$('.genre-alerts .item a, .category-bar .item a').click(function(){
+		$(this).toggleClass('active');
+		return false;
+	});
+	if(($window).width() < 768){
+		$('.genre-alerts').slick({
+			dots: false,
+			infinite: true,
+			speed: 300,
+			slidesToShow: 5,
+			slidesToScroll: 2,
+			centerMode: false,
+			variableWidth: true,
+			arrows: false
 		});
-		dropLink_.click(function(){
-			var this_ = $(this),
-				par_ = this_.parent('li'),
-				text_ = this_.html();
-			if (!par_.hasClass('active')) {
-				drop_.slideUp(300, function(){});
-				btn_.html(text_);
-				parent_.removeClass('open');
-			};
+	}
+	if(($window).width() < 768){
+		$('.service-alerts').slick({
+			dots: false,
+			infinite: true,
+			speed: 300,
+			slidesToShow: 5,
+			slidesToScroll: 2,
+			centerMode: false,
+			variableWidth: true,
+			arrows: false
 		});
-	})();
+	}
 });
 function getGridSize() {
 	return  (window.innerWidth < 700) ? 1 :
