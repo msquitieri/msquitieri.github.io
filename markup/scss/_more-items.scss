@@ -8,7 +8,7 @@
 	z-index: 20;
 	@include clearfix;
 	@media (max-width:($screen-sm - 1)){
-		width: 297px;
+		width: 100%;
 		margin: 0 auto;
 		overflow: auto;
 		white-space: nowrap !important;
@@ -17,7 +17,6 @@
 			white-space: normal !important;
 		}
 	}
-
 	> li{
 		width: 205px;
 		padding: 0 10px 20px;

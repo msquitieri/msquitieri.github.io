@@ -1,6 +1,6 @@
 /*
 Error: File to import not found or unreadable: ./sass/bootstrap/variables.
-       Load path: D:/2015/04/GoWatchIt(feed-upd)/markup/scss
+       Load path: D:/2015/04/GoWatchIt(feed)/markup/scss
         on line 1 of scss/ie.scss
 
 1: @import "./sass/bootstrap/variables";
@@ -54,4 +54,4 @@ C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.9/vendor/listen/lib/listen/adapter.r
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: ./sass/bootstrap/variables.\A        Load path: D:/2015/04/GoWatchIt(feed-upd)/markup/scss\A         on line 1 of scss/ie.scss\A \A 1: @import \"./sass/bootstrap/variables\";\A 2: body{min-width: 1280px !important;}\A 3: .fancybox-overlay{background: url(#{$base-images-dir}fancybox/fancybox_overlay.png);}\A 4: .info-block{\A 5: 	.play{\A 6: 		background: none;"; }
+  content: "Error: File to import not found or unreadable: ./sass/bootstrap/variables.\A        Load path: D:/2015/04/GoWatchIt(feed)/markup/scss\A         on line 1 of scss/ie.scss\A \A 1: @import \"./sass/bootstrap/variables\";\A 2: body{min-width: 1280px !important;}\A 3: .fancybox-overlay{background: url(#{$base-images-dir}fancybox/fancybox_overlay.png);}\A 4: .info-block{\A 5: 	.play{\A 6: 		background: none;"; }

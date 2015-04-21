@@ -237,7 +237,7 @@
 	}
 	.carousel-6items{
 		@media (max-width:($screen-sm - 1)){
-			width: 297px;
+			width: 100%;
 			margin: 0 auto 31px;
 		}
 		.flex-direction-nav a{bottom: 58px;}

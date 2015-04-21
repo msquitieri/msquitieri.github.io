@@ -352,4 +352,12 @@
 	@media (max-width:($screen-sm - 1)){
 		padding: 20px 0 13px;
 	}
+	.tab-pane.desktop-visible{
+		@media (min-width:($screen-sm)){
+			display: block !important;
+			opacity: 1 !important;
+			visibility: visible !important;
+			padding: 0 0 20px;
+		}
+	}
 }

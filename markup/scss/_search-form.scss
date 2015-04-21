@@ -108,9 +108,12 @@
 			width: 180px;
 		}
 	}
+	@media (max-width: $screen-md-max){
+		bottom: 80px;
+	}
 	@media (max-width:($screen-md - 1)){
 		width: 400px;
-		bottom: 20px;
+		bottom: 34px;
 		right: 10px;
 		left: auto;
 		.form-control{

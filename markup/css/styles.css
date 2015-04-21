@@ -3499,6 +3499,12 @@ tbody.collapse.in {
       background: #2e2e2c; }
       .navbar .container {
         padding: 0; } }
+  @media (max-width: 991px) {
+    .navbar .navbar-collapse {
+      padding-top: 9px; } }
+  @media (max-width: 767px) {
+    .navbar .navbar-collapse {
+      padding-top: 0; } }
   @media (max-width: 767px) {
     .navbar {
       padding: 0;
@@ -5377,7 +5383,7 @@ button.close {
     @media (max-width: 1279px) {
       .carousel-inner > .item {
         min-height: 350px; } }
-    @media (max-width: 1279px) {
+    @media (max-width: 991px) {
       .carousel-inner > .item {
         min-height: 225px; } }
   .carousel-inner > .active,
@@ -6032,10 +6038,13 @@ button.close {
       .search-form .dropdown-menu {
         min-width: 180px;
         width: 180px; } }
+  @media (max-width: 1279px) {
+    .search-form {
+      bottom: 80px; } }
   @media (max-width: 991px) {
     .search-form {
       width: 400px;
-      bottom: 20px;
+      bottom: 34px;
       right: 10px;
       left: auto; }
       .search-form .form-control {
@@ -6443,7 +6452,7 @@ button.close {
         border-radius: 0; } }
   @media (max-width: 767px) {
     .flex-carousel .carousel-6items {
-      width: 297px;
+      width: 100%;
       margin: 0 auto 31px; } }
   .flex-carousel .carousel-6items .flex-direction-nav a {
     bottom: 58px; }
@@ -6558,7 +6567,7 @@ button.close {
     clear: both; }
   @media (max-width: 767px) {
     .more-items {
-      width: 297px;
+      width: 100%;
       margin: 0 auto;
       overflow: auto;
       white-space: nowrap !important; }
@@ -8256,6 +8265,12 @@ button.close {
   @media (max-width: 767px) {
     .watch-ways {
       padding: 20px 0 13px; } }
+  @media (min-width: 768px) {
+    .watch-ways .tab-pane.desktop-visible {
+      display: block !important;
+      opacity: 1 !important;
+      visibility: visible !important;
+      padding: 0 0 20px; } }
 
 /* info-megamenu */
 .info-megamenu {
@@ -9440,7 +9455,6 @@ button.close {
       .genre-alerts .item a:hover {
         text-decoration: none; }
       .genre-alerts .item a.active {
-        text-decoration: none;
         background: #f26a46;
         border: solid 1px #f26a46; }
 
