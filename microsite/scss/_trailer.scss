@@ -1,0 +1,91 @@
+.trailer{
+	padding-right: 176px;
+	position: relative;
+	.gallery{
+		width: 100%;
+		position: relative;
+		overflow: hidden;
+		img{
+			width: 100%;
+			vertical-align: top;
+		}
+	}
+	.item{
+		width: 100%;
+	}
+	.thumbnails{
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		width: 165px;
+		padding: 39px 0 38px;
+		.slick-arrow{
+			border: none;
+			position: absolute;
+			width: 100%;
+			left: 0;
+			background: $thumbs-arrows-bg;
+			font-size: 0;
+			line-height: 0;
+			height: 37px;
+			&:before{
+				content: '';
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				margin: -6px 0 0 -12px;
+				border: solid transparent;
+			}
+		}
+		.slick-prev{
+			top: 0;
+			&:before{
+				border-width: 0 12px 13px;
+				border-bottom-color: $white;
+			}
+		}
+		.slick-next{
+			bottom: 0;
+			&:before{
+				border-width: 13px 12px 0;
+				border-top-color: $white;
+			}
+		}
+		.item{
+			padding: 4px 0;
+			text-align: center;
+		}
+		img{
+			vertical-align: top;
+			max-width: 100%;
+			cursor: pointer;
+		}
+	}
+	@include breakpoint(tablet){
+		padding-right: 0;
+		.gallery{margin-bottom: 28px;}
+		.thumbnails{
+			position: static;
+			padding: 0;
+			width: auto;
+			margin: 0;
+			.item{
+				float: left;
+				margin: 0 18px 18px 0;
+				padding: 0;
+			}
+			img{
+				width: 100%;
+			}
+		}
+	}
+	@include breakpoint(mobile){
+		.gallery{margin-bottom: 14px;}
+		.thumbnails{
+			.item{
+				margin: 0 14px 14px 0;
+			}
+		}
+	}
+}

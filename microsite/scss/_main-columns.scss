@@ -1,0 +1,54 @@
+#content{
+	float: left;
+	width: 650px/$base-width*100%;
+	@include breakpoint(tablet){
+		width: auto;
+		float: none;
+	}
+}
+#sidebar{
+	float: right;
+	width: 310px/$base-width*100%;
+	.btn-set{
+		display: block;
+		margin-bottom: 23px;
+	}
+	> h3{
+		margin: 0 0 8px;
+		text-transform: uppercase;
+		color: $white;
+		font-size: $base-font-size+2;
+		font-weight: 700;
+	}
+	.channels{margin-bottom: $channels-space;}
+	.ad{
+		width: 100%;
+		img{
+			vertical-align: top;
+			max-width: 100%;
+		}
+	}
+	@include breakpoint(tablet){
+		position: absolute;
+		top: 0;
+		right: 10px;
+		z-index: 60;
+		width: 38px;
+		> *{display: none;}
+		.btn-set{
+			font-size: 0;
+			margin: 0;
+			padding: 9px 2px 11px;
+			text-align: center;
+			.icon{
+				font-size: 22px;
+				margin-right: 0;
+			}
+		}
+	}
+	.cinema-info{margin-bottom: 19px;}
+	@include breakpoint(mobile){
+		right: 4px;
+		width: 41px;
+	}
+}

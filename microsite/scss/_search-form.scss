@@ -1,0 +1,31 @@
+.search-form{
+	width: 100%;
+	position: relative;
+	.form-control{
+		border: none;
+		background: $search-form-bg;
+		color: $search-form-color;
+		font-size: $search-form-font-seize;
+		@include border-box();
+		padding: 0 44px 0 13px;
+		margin: 0;
+		display: block;
+		width: 100%;
+		height: $list-menu-height;
+		@include placeholder( $search-form-color);
+		position: relative;
+		z-index: 1;
+	}
+	.icon{
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		width: 44px;
+		text-align: center;
+		z-index: 5;
+		font-size: $search-form-font-seize+6;
+		color: $search-form-icon-color;
+		line-height: $list-menu-height;
+	}
+}

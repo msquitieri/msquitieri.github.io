@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GoWatchIt</title>
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,700">
+	<link rel="stylesheet" href="css/gowatchit-iconfont.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+	<script src="js/placeholders.min.js"></script>
+	<script src="js/custom-form.js"></script>
+	<script src="js/custom-form.select.js"></script>
+	<script src="http://jscrollpane.kelvinluck.com/script/jquery.jscrollpane.min.js"></script>
+	<script src="http://jscrollpane.kelvinluck.com/script/jquery.mousewheel.js"></script>
+	<script src="http://jscrollpane.kelvinluck.com/script/mwheelIntent.js"></script>
+	<script src="js/jquery.fancybox.js"></script>
+	<script src="http://cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js"></script>
+	<script src="js/scripts.js"></script>
+</head>
+<body>
+<div id="wrapper">
+	<header id="header">
+		<figure class="banner">
+			<img src="images/img-banner-black.jpg" alt="image description">
+		</figure>
+		<nav id="main-nav">
+			<div class="container">
+				<a href="#" class="open-menu">Open Menu</a>
+				<div class="tablet-holder">
+					<ul class="menu">
+						<li><a href="#">Register for GoWatchIt</a></li>
+						<li><a href="#">Sign in to GoWatchIt</a></li>
+					</ul>
+					<div class="lang">
+						<a href="#" class="opener"><img src="images/ico-us.png" alt="image description" width="27" height="20"></a>
+						<ul class="drop">
+							<li class="active"><a href="#"><img src="images/ico-us.png" alt="image description" width="27" height="20"></a></li>
+							<li><a href="#"><img src="images/ico-us.png" alt="image description" width="27" height="20"></a></li>
+							<li><a href="#"><img src="images/ico-us.png" alt="image description" width="27" height="20"></a></li>
+							<li><a href="#"><img src="images/ico-us.png" alt="image description" width="27" height="20"></a></li>
+						</ul>
+					</div>
+				</div>
+				<ul class="nav">
+					<li><a href="#"><span class="hidden-xs">BUY</span> TICKETS</a></li>
+					<li class="active"><a href="#">TRAILER</a></li>
+					<li><a href="#"><span class="hidden-xs">INVITE YOUR FRIENDS</span><span class="visible-xs">share</span></a></li>
+					<li><a href="#">WEBSITE</a></li>
+				</ul>
+			</div>
+		</nav><!-- /main-nav -->
+	</header><!-- /header -->
+	<div id="main" class="container">
+		<div class="trailer">
+			<div class="gallery">
+				<div class="item"><img src="images/img-trailer01.jpg" alt="image description"></div>
+				<div class="item"><img src="images/img-trailer01.jpg" alt="image description"></div>
+				<div class="item"><img src="images/img-trailer01.jpg" alt="image description"></div>
+				<div class="item"><img src="images/img-trailer01.jpg" alt="image description"></div>
+				<div class="item"><img src="images/img-trailer01.jpg" alt="image description"></div>
+				<div class="item"><img src="images/img-trailer01.jpg" alt="image description"></div>
+			</div><!-- gallery -->
+			<div class="thumbnails">
+				<div class="item"><img src="images/img-thumb01.jpg" alt="image description"></div>
+				<div class="item"><img src="images/img-thumb02.jpg" alt="image description"></div>
+				<div class="item"><img src="images/img-thumb03.jpg" alt="image description"></div>
+				<div class="item"><img src="images/img-thumb04.jpg" alt="image description"></div>
+				<div class="item"><img src="images/img-thumb01.jpg" alt="image description"></div>
+				<div class="item"><img src="images/img-thumb02.jpg" alt="image description"></div>
+			</div><!-- /thumbnails -->
+		</div><!-- /trailer -->
+	</div><!-- /main -->
+	<footer id="footer" class="container hidden-xs">
+		<ul>
+			<li><a href="#">POLICIES</a></li>
+			<li><a href="#">TERMS OF USE</a></li>
+			<li>&copy; 2015  GOWATCHIT</li>
+			<li>&copy; 2015 Universal Studios. ALL RIGHTS RESERVED</li>
+		</ul>
+		<a href="#" class="logo"><img src="images/logo-universal.png" alt="image description"></a>
+	</footer><!-- /footer -->
+	<img src="images/img-base-black.jpg" alt="image description" class="base-bg">
+</div><!-- /wrapper -->
+<!-- lightbox -->
+<div style="width: 0; height: 0; position: absolute; top: -9000px; left: -9000px; overflow: hidden;">
+	<div id="add-to-calendar" class="lightbox small">
+		<h4 class="title"><i class="icon icon-addcalendar"></i>ADD TO CALENDAR</h4>
+		<dl>
+			<dt>WHAT:</dt>
+			<dd>Watch Jurassic World </dd>
+			<dt>WHERE:</dt>
+			<dd>Century Cinemas 16 1500 N. Shoreline Blvd., Mountain View, CA</dd>
+			<dt>DATE:</dt>
+			<dd>Thursday, July 16</dd>
+		</dl>
+		<form action="#">
+			<select class="sell" title="SELECT SHOWTIME">
+				<option>SHOWTIME 01</option>
+				<option>SHOWTIME 02</option>
+				<option>SHOWTIME 03</option>
+				<option>SHOWTIME 04</option>
+			</select>
+		</form>
+		<footer>
+			<a href="#" class="btn-cancel">CANCEL</a>
+			<a href="#" class="btn-add">ADD TO CALENDAR</a>
+		</footer>
+	</div>
+</div>
+</body>
+</html>

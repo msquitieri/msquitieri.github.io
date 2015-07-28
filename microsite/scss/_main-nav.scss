@@ -1,0 +1,184 @@
+#main-nav{
+	background-color: $main-nav-bg;
+	text-align: left;
+	font-size: $main-nav-font-size;
+	margin-bottom: 32px;
+	position: relative;
+	z-index: 20;
+	.tablet-holder{
+		display: inline;
+	}
+	a{
+		color: $white;
+		&:hover{
+			color: darken($white, 30%);
+		}
+	}
+	.menu{
+		list-style: none;
+		padding: 12px 0 0;
+		margin: 0;
+		float: right;
+		font-size: $main-nav-font-size - 3;
+		li{
+			float: left;
+			margin-left: 28px;
+		}
+	}
+	.nav{
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		overflow: hidden;
+		font-weight: 700;
+		text-transform: uppercase;
+		li{
+			float: left;
+			@include border-box();
+			margin: 0 4px 0 56px;
+			&.active{
+				a{
+					border-top-color: darken($white, 14.9%);
+				}
+			}
+		}
+		a{
+			padding: 4px 1px;
+			display: block;
+			border: 5px solid transparent;
+			border-width: 5px 0;
+		}
+	}
+	.open-menu{
+		float: left;
+		width: 27px;
+		background: $open-menu-bg;
+		@include background-clip();
+		position: relative;
+		font-size: 0;
+		line-height: 0;
+		height: 4px;
+		border: solid transparent;
+		border-width: 6px 0;
+		margin: 15px 15px 0 0;
+		display: none;
+		&:after,
+		&:before{
+			content: '';
+			height: 4px;
+			background: $open-menu-bg;
+			position: absolute;
+			left: 0;
+			width: 100%;
+		}
+		&:before{top: -10px;}
+		&:after{bottom: -10px;}
+	}
+	@include breakpoint(tablet){
+		margin-bottom: 10px;
+		.open-menu{
+			display: block;
+			margin-right: 73px;
+		}
+		&.menu-opened{
+			.tablet-holder{
+				left: 0;
+			}
+		}
+		.tablet-holder{
+			position: absolute;
+			top: 100%;
+			left: -290px;
+			background: $white;
+			width: 290px;
+			@include border-box();
+			@include transition(left .3s);
+			padding: 31px 34px;
+		}
+		.menu{
+			float: none;
+			text-transform: uppercase;
+			font-size: $main-nav-font-size;
+			font-weight: 700;
+			padding: 0;
+			li{
+				float: none;
+				margin: 0 0 12px;
+			}
+			a{
+				color: $list-menu-filter-color;
+			}
+		}
+		.lang{
+			width: auto;
+			height: auto;
+			float: none;
+			margin: 0 0 0 -3px;
+			padding-top: 11px;
+			.opener{display: none;}
+			ul{
+				visibility: visible;
+				opacity: 1;
+				position: static;
+				max-height: none;
+				overflow: hidden;
+				border-radius: 0;
+				li{
+					float: left;
+					border: none;
+					margin: 0 7px 6px 0;
+					&.active{
+						display: block;
+						> a{border-color: $list-menu-filter-color;}
+					}
+					img{opacity: 1;}
+				}
+				a{
+					float: left;
+					width: 35px;
+					height: 28px;
+					line-height: 28px;
+					border: 1px solid transparent;
+				}
+			}
+		}
+		.nav{
+			font-size: 0.1px;
+			line-height: 0;
+			text-align: justify;
+			&:after{
+				content: '';
+				width: 100%;
+				display: inline-block;
+				vertical-align: top;
+				height: 0;
+				overflow: hidden;
+			}
+			li{
+				font-size:  $main-nav-font-size;
+				line-height: $base-line-height;
+				float: none;
+				display: inline-block;
+				margin: 0;
+			}
+			a{
+				padding-top: 9px;
+				padding-bottom: 8px;
+			}
+		}
+	}
+	@include breakpoint(mobile){
+		padding-left: 10px;
+		padding-right: 10px;
+		margin-bottom: 7px;
+		.open-menu{
+			margin: 12px 22px 0 0;
+		}
+		.nav{
+			a{
+				padding-top: 5px;
+				padding-bottom: 7px;
+			}
+		}
+	}
+}

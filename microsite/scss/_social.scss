@@ -1,0 +1,25 @@
+.social{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	li{
+		float: left;
+		margin-right: 30px;
+	}
+	img{
+		display: block;
+		border-radius: 50%;
+	}
+	@include breakpoint(mobile){
+		text-align: center;
+		font-size: 0;
+		line-height: 0;
+		li{
+			float: none;
+			display: inline-block;
+			vertical-align: top;
+			margin: 0 15px;
+		}
+	}
+}

@@ -1,0 +1,34 @@
+.scroll-pane{
+	overflow-y: auto;
+	.jspContainer{
+		position: relative;
+	}
+	.jspPane{
+		position: absolute;
+	}
+	.jspVerticalBar{
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 100%;
+	}
+	.jspTrack{
+		background: $jspTrack-bg;
+		width: $jspTrack-width;
+		position: relative;
+		@include border-box();
+		border-left: 6px solid transparent;
+		@include background-clip();
+	}
+	.jspDrag{
+		position: absolute;
+		background: $jspDrag-bg;
+		width: 100%;
+	}
+	.jspCap{
+		font-size: 0;
+		line-height: 0;
+	}
+	.jspDragBottom,
+	.jspDragTop{display: none;}
+}

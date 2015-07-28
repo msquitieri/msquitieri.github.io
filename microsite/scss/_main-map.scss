@@ -1,0 +1,39 @@
+.main-map{
+	width: 100%;
+	position: relative;
+	height: 854px;
+	>#main-map{
+		height: 100%;
+	}
+	img{
+		width: 100%;
+		vertical-align: top;
+	}
+	.cinema-info{
+		display: none;
+		border: 1px solid $white;
+		width: 347px;
+	}
+	@include breakpoint(tablet){
+		height: 750px;
+		.cinema-info{
+			display: block;
+			position: absolute;
+			top: 50%;
+			left: 15px;
+			margin-top: -70px;
+		}
+	}
+	@include breakpoint(mobile){
+		height: 377px;
+		.cinema-info{
+			bottom: 0;
+			left: 0;
+			top: auto;
+			width: auto;
+			right: 0;
+			border-width: 1px 0 0;
+			margin-top: 0;
+		}
+	}
+}

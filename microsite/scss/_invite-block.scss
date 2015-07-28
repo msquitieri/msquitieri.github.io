@@ -1,0 +1,36 @@
+.invite-block{
+	width: $invite-block-width;
+	@include border-box();
+	padding: 45px $invite-block-space;
+	margin: 0 auto;
+	background: $invite-block-bg;
+	font-size: 14px;
+	line-height: 21px;
+	h1{
+		font-weight: 700;
+		color: $white;
+		font-size: 24px;
+		line-height: 30px;
+		margin: 0 0 -3px;
+		text-transform: uppercase;
+	}
+	p{margin: 0 0 22px;}
+	.link{
+		display: block;
+		background: $white;
+		color: $sub-text-color;
+		padding: 9px 12px;
+		margin-bottom: 32px;
+		overflow: hidden;
+		white-space: nowrap;
+		-ms-text-overflow: ellipsis;
+		text-overflow: ellipsis;
+	}
+	@include breakpoint(mobile){
+		width: auto;
+		padding: 45px 30px 38px;
+		text-align: center;
+		.link{text-align: left;}
+		p{margin-bottom: 29px;}
+	}
+}

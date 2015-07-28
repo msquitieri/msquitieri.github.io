@@ -1,0 +1,21 @@
+#header{
+	position: relative;
+	z-index: 10;
+	text-align: center;
+	background-color: $header-bg;
+	.banner{
+		display: inline-block;
+		vertical-align: top;
+		max-width: 100%;
+		position: relative;
+		img{
+			vertical-align: top;
+			max-width: 100%;
+		}
+	}
+	@include breakpoint(tablet) {
+		.banner{
+			display: block;
+		}
+	}
+}

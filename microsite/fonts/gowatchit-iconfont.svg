@@ -1,0 +1,28 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2015 by original authors @ fontello.com</metadata>
+<defs>
+<font id="gowatchit-iconfont" horiz-adv-x="1000" >
+<font-face font-family="gowatchit-iconfont" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="pin" unicode="&#x50;" d="m856 488c0-200-362-635-362-635s-362 435-362 635 162 362 362 362 362-162 362-362z" horiz-adv-x="1000" />
+<glyph glyph-name="addcalendar" unicode="&#x61;" d="m863 724v126h-116v-126h-473v126h-116v-126h-137v-248-626h969v626 248h-127z m42-790h-800v537h800v-537z m-463 211h-116v116h116v126h126v-126h127v-116h-127v-127h-126v127z" horiz-adv-x="1000" />
+<glyph glyph-name="pause" unicode="&#x62;" d="m357-110h-242v920h242v-920z m528 920h-242v-921h242v921z" horiz-adv-x="1000" />
+<glyph glyph-name="calendar" unicode="&#x63;" d="m853 724v126h-116v-126h-474v126h-116v-126h-136v-248-626h968v626 248h-126z m42-790h-800v537h800v-537z" horiz-adv-x="1000" />
+<glyph glyph-name="arrow-down" unicode="&#x64;" d="m951 566l-456-421-456 421h912z" horiz-adv-x="1000" />
+<glyph glyph-name="exitfullscreen" unicode="&#x65;" d="m0 692v-684h1000v684h-1000z m305-589h-172-38-11v189h63v-116h158v-73z m0 431h-158v-105h-63v179h11 38 172v-74z m600-431h-3-38-169v73h158v116h52v-189z m0 326h-52v105h-158v74h169 38 3v-179z" horiz-adv-x="1000" />
+<glyph glyph-name="filter" unicode="&#x66;" d="m579 360v-390l-158-116v512l-421 484h1000l-421-490z" horiz-adv-x="1000" />
+<glyph glyph-name="email" unicode="&#x67;" d="m500 850c-276 0-500-224-500-500 0-276 224-500 500-500 276 0 500 224 500 500 0 276-224 500-500 500z m273-707h-546v294l275-112 271 112v-294z m0 359l-275-112-271 112v55h546v-55z" horiz-adv-x="1000" />
+<glyph glyph-name="fullscreen" unicode="&#x68;" d="m156 537h691v-388h-691v388z m-111 110h223v42h-223-38-4v-261h42v219z m948 42h-38-224v-42h223v-219h42v261h-3z m-948-417h-42v-261h4 38 223v42h-223v219z m910-219h-224v-42h223 38 4v261h-42v-219z" horiz-adv-x="1000" />
+<glyph glyph-name="play" unicode="&#x69;" d="m105 806l790-456-790-456v912z" horiz-adv-x="1000" />
+<glyph glyph-name="list" unicode="&#x6c;" d="m53 734h168v-158h-168v158z m0-305h168v-158h-168v158z m0-305h168v-158h-168v158z m273 610h621v-158h-621v158z m0-305h621v-158h-621v158z m0-305h621v-158h-621v158z" horiz-adv-x="1000" />
+<glyph glyph-name="menu" unicode="&#x6d;" d="m947 734v-158h-894v158h894z m-894-463h894v158h-894v-158z m0-305h894v158h-894v-158z" horiz-adv-x="1000" />
+<glyph glyph-name="pindot" unicode="&#x70;" d="m491 850c-200 0-363-162-363-362 0-200 363-635 363-635s362 435 362 635c0 200-162 362-362 362z m0-485c-63 0-112 49-112 111s49 112 112 112 111-50 111-112-49-111-111-111z" horiz-adv-x="1000" />
+<glyph glyph-name="search" unicode="&#x73;" d="m967 32l-222 223c36 58 56 128 56 200 0 212-171 385-384 385s-384-173-384-385c0-212 171-384 384-384 56 0 109 13 158 34l232-233 160 160z m-779 423c0 127 103 229 229 229s228-102 228-229-102-228-228-228-229 102-229 228z" horiz-adv-x="1000" />
+<glyph glyph-name="arrow-up" unicode="&#x75;" d="m39 145l456 421 456-421h-912z" horiz-adv-x="1000" />
+<glyph glyph-name="eye" unicode="&#x76;" d="m488 695c291 0 487-340 487-340s-196-339-487-339-488 339-488 339 196 340 488 340z m0-579c131 0 238 108 238 239s-107 239-238 239-239-108-239-239 107-239 239-239z m107 239c0-59-50-106-107-106-59 0-107 47-107 106 0 57 48 107 107 107 57 0 107-50 107-107z" horiz-adv-x="975" />
+<glyph glyph-name="x" unicode="&#x78;" d="m599 352l258-258-104-104-258 258-258-258-104 104 258 258-258 258 104 104 258-258 258 258 104-104-258-258z" horiz-adv-x="1000" />
+</font>
+</defs>
+</svg>

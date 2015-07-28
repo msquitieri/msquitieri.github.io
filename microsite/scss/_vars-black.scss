@@ -1,0 +1,109 @@
+// vars
+$base-images: '../images/';
+$base-fonts: '../fonts/';
+
+// fonts
+$base-font-family: 'Open Sans', sans-serif;
+$base-font-size: 12px;
+$base-line-height: 1.5;
+
+// base
+$base-background: #000;
+$base-radius: 5px;
+$base-button-hover: #97acbf;
+$base-width: 980px;
+$base-width-tablet: 650px;
+$base-padding: 10px;
+$base-color: #7d8e9e;
+$sub-text-color: #565c63;
+
+// responsive
+$tablet: 1000px;
+$mobile: 767px;
+
+// colors
+$white: #fff;
+$black: #000;
+
+//header
+$header-bg: #0f1012;
+
+//main-nav
+$main-nav-bg: #020202;
+$main-nav-font-size: 14px;
+$open-menu-bg: $white;
+
+//langs
+$lang-item-height: 43px;
+
+//list-menu
+$list-menu-col-space: 11px;
+$list-menu-height: 40px;
+$list-menu-filter-color: #636f7d;
+$list-menu-filter-bg: $white;
+$list-menu-filter-bg-active: $base-button-hover;
+$list-menu-filter-color-active: $list-menu-filter-color;
+
+// search-form
+$search-form-font-seize: 14px;
+$search-form-bg: $white;
+$search-form-color: $sub-text-color;
+$search-form-icon-color: #5f727e;
+
+// select
+$select-height: $list-menu-height;
+$select-color: $list-menu-filter-color;
+$select-date-color: $sub-text-color;
+$select-bg: $white;
+$select-caret-color: $select-color;
+$select-caret-active-color: $select-color;
+$select-bg-active: $base-button-hover;
+$select-color-active: $select-color;
+$select-drop-color: #626e7e;
+$select-border: #97acbf;
+
+// list-films
+$list-films-bg: rgba(0,0,0,.74);
+$list-films-pin-color: #010101;
+$list-films-icon-color: $list-menu-filter-color;
+$time-list-color: $list-films-icon-color;
+$time-list-color-active: $time-list-color;
+
+// scroll
+$jspTrack-width: 16px;
+$jspTrack-bg: rgba(99,111,125,.4);
+$jspDrag-bg: rgba(151,172,191,.66);
+
+//channels
+$channels-space: 14px;
+$channels-border-color: #5f727e;
+$channels-bg: rgba(90,101,113,.45);
+
+//lightbox
+$lightbox-color: $base-color;
+$lightbox-fader: rgba(0,0,0,.63);
+$lightbox-bg: $white;
+$lightbox-small-width: 346px;
+$lightbox-space: 29px;
+$lightbox-title-border: $base-button-hover;
+$lightbox-font-size: 14px;
+$lightbox-line-height: 1.214285714285713;
+
+//invite-block
+$invite-block-width: 518px;
+$invite-block-space: 70px;
+$invite-block-bg: $list-films-bg;
+
+//trailer
+$thumbs-arrows-bg: $list-films-bg;
+
+//buttons
+$btn-set-color: $sub-text-color;
+$btn-set-color-active: $sub-text-color;
+
+$btn-cancel-color: $sub-text-color;
+
+$btn-add-color: $sub-text-color;
+$btn-add-bg: $base-button-hover;
+$btn-add-bg-active: lighten($btn-add-bg, 20%);
+$btn-add-color-active: $btn-add-color;

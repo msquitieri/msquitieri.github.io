@@ -1,0 +1,51 @@
+@mixin placeholder($color) {
+	&::-moz-placeholder {
+		color: $color;
+		opacity: 1;
+	}
+	&:-ms-input-placeholder {color: $color;}
+	&::-webkit-input-placeholder {color: $color;}
+}
+@mixin transition($opt: all .3s) {
+	-webkit-transition: $opt;
+	-o-transition: $opt;
+	transition: $opt;
+}
+@mixin clearfix() {
+	&:after{
+		content: '';
+		clear: both;
+		display: block;
+	}
+}
+@mixin border-box() {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+@mixin rotate($deg: -90) {
+	-webkit-transform: rotate($deg+deg);
+	-ms-transform: rotate($deg+deg);
+	-o-transform: rotate($deg+deg);
+	transform: rotate($deg+deg);
+}
+@mixin background-clip($set: padding-box) {
+	-webkit-background-clip: $set;
+	-moz-background-clip: $set;
+	background-clip: $set;
+}
+@mixin breakpoint($class) {
+	@if $class == mobile {
+		@media screen and (max-width: $mobile), 
+		screen and (orientation: landscape) and (max-width: $mobile),
+		screen and (orientation: portrait ) and (max-width: $mobile) { @content; }
+	}	
+	@else if $class == tablet {
+		@media screen and (max-width: $tablet) { @content; }
+	}
+	@if $class == md {
+		@media screen and (min-width: $mobile + 1), 
+		screen and (orientation: landscape) and (min-width: $mobile + 1),
+		screen and (orientation: portrait ) and (min-width: $mobile + 1) { @content; }
+	}
+}

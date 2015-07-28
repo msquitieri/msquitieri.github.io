@@ -1,0 +1,109 @@
+// vars
+$base-images: '../images/';
+$base-fonts: '../fonts/';
+
+// fonts
+$base-font-family: 'Open Sans', sans-serif;
+$base-font-size: 12px;
+$base-line-height: 1.5;
+
+// base
+$base-background: #fff;
+$base-radius: 5px;
+$base-button-hover: #7e7975;
+$base-width: 980px;
+$base-width-tablet: 650px;
+$base-padding: 10px;
+$base-color: #7e7975;
+$sub-text-color: #565c63;
+
+// responsive
+$tablet: 1000px;
+$mobile: 767px;
+
+// colors
+$white: #fff;
+$black: #000;
+
+//header
+$header-bg: #e6d321;
+
+//main-nav
+$main-nav-bg: #000;
+$main-nav-font-size: 14px;
+$open-menu-bg: $white;
+
+//langs
+$lang-item-height: 43px;
+
+//list-menu
+$list-menu-col-space: 11px;
+$list-menu-height: 40px;
+$list-menu-filter-color: $base-color;
+$list-menu-filter-bg: $white;
+$list-menu-filter-bg-active: $base-button-hover;
+$list-menu-filter-color-active: $white;
+
+// search-form
+$search-form-font-seize: 14px;
+$search-form-bg: $white;
+$search-form-color: $base-color;
+$search-form-icon-color: $base-color;
+
+// select
+$select-height: $list-menu-height;
+$select-color: $base-color;
+$select-date-color: $base-color;
+$select-bg: $white;
+$select-caret-color: $base-color;
+$select-caret-active-color: $white;
+$select-bg-active: $base-color;
+$select-color-active: $white;
+$select-drop-color: $base-color;
+$select-border: $base-color;
+
+// list-films
+$list-films-bg: rgba(0,0,0,.82);
+$list-films-pin-color: #0f0e03;
+$list-films-icon-color: $base-color;
+$time-list-color: $black;
+$time-list-color-active: $white;
+
+// scroll
+$jspTrack-width: 16px;
+$jspTrack-bg: rgba(255,255,255,.4);
+$jspDrag-bg: rgba(255,255,255,.66);
+
+//channels
+$channels-space: 14px;
+$channels-border-color: $white;
+$channels-bg: rgba(255,255,255,.45);
+
+//lightbox
+$lightbox-color: $base-color;
+$lightbox-fader: rgba(0,0,0,.63);
+$lightbox-bg: $white;
+$lightbox-small-width: 346px;
+$lightbox-space: 29px;
+$lightbox-title-border: $base-button-hover;
+$lightbox-font-size: 14px;
+$lightbox-line-height: 1.214285714285713;
+
+//invite-block
+$invite-block-width: 518px;
+$invite-block-space: 70px;
+$invite-block-bg: $list-films-bg;
+
+//trailer
+$thumbs-arrows-bg: $list-films-bg;
+
+//buttons
+$btn-set-color: $base-color;
+$btn-set-color-active: $white;
+
+$btn-cancel-color: #686461;
+
+$btn-add-color: #383433;
+$btn-add-bg: $header-bg;
+$btn-add-bg-active: $base-button-hover;
+$btn-add-color-active: $white;

@@ -1,0 +1,139 @@
+.cinema-info{
+	background: $list-films-bg;
+	position: relative;
+	@include border-box();
+	padding: 27px 25px 29px 35px;
+	line-height: 21px;
+	header{
+		padding: 0 25px 18px 20px;
+		position: relative;
+		.icon{
+			position: absolute;
+			top: 4px;
+			right: 0;
+			font-size: 24px;
+			line-height: 24px;
+			color: $list-films-icon-color;
+		}
+		a.fancybox{
+			&:hover{
+				color: lighten($list-films-icon-color, 30%);
+			}
+		}
+	}
+	.num{
+		position: absolute;
+		top: 27px;
+		left: 19px;
+		width: 28px;
+		font-size: 18px;
+		line-height: 28px;
+		font-weight: 700;
+		text-align: center;
+		color: $list-films-pin-color;
+		z-index: 2;
+		&:after{
+			content: '\50';
+			position: absolute;
+			z-index: 1;
+			top: 7px;
+			left: -2px;
+			font-family: gowatchit-iconfont;
+			color: $white;
+			font-size: 32px;
+			line-height: 20px;
+			z-index: -1;
+		}
+	}
+	.time-list{
+		border-top: 1px solid $list-films-icon-color;
+		padding: 1px 0;
+		ul{
+			list-style: none;
+			padding: 0 0 2px;
+			margin: 0;
+			text-align: center;
+			font-size: $base-font-size - 1;
+			font-weight: 700;
+			@include clearfix();
+			li{
+				float: left;
+				padding: 0 8px 8px 0;
+			}
+			a{
+				display: block;
+				color: $list-films-icon-color;
+				background-color: $white;
+				border-radius: $base-radius;
+				padding: 1px 5px;
+				&:hover{
+					background-color: $base-button-hover;
+					color: $time-list-color-active;
+				}
+			}
+		}
+	}
+	.title{
+		margin: 0 0 -4px;
+		color: $white;
+		text-transform: uppercase;
+		font-size: 18px;
+		line-height: 21px;
+	}
+	.subttl{
+		text-transform: none;
+		margin: 0 0 4px;
+		font-size: $base-font-size;
+		font-weight: 700;
+	}
+	p{margin: 0;}
+	@include breakpoint(mobile){
+		padding: 27px 20px 12px 57px;
+		header{
+			padding-left: 0;
+			padding-bottom: 13px;
+			.icon{
+				top: 2px;
+			}
+		}
+		.num{
+			left: 16px;
+			&:after{
+				font-size: 34px;
+				top: 10px;
+				left: -3px;
+			}
+		}
+		.title{
+			font-size: 18px;
+			line-height: 22px;
+			margin-bottom: -5px;
+		}
+		.subttl{margin-bottom: 4px;}
+		.drag{
+			position: absolute;
+			top: -15px;
+			left: 50%;
+			width: 44px;
+			height: 1px;
+			font-size: 0;
+			line-height: 0;
+			margin-left: -38px;
+			background-color: $list-films-icon-color;
+			border: solid transparent;
+			border-width: 4px 0;
+			@include background-clip();
+			&:after,
+			&:before{
+				content: '';
+				position: absolute;
+				left: 0;
+				width: 100%;
+				background: $list-films-icon-color;
+				height: 1px;
+			}
+			&:before{top: -5px;}
+			&:after{bottom: -5px;}
+		}
+	}
+}

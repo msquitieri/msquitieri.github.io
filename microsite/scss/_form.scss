@@ -1,0 +1,188 @@
+/* custom forms styles */
+.customForm-hidden {
+	display: block !important;
+	position: absolute !important;
+	left:-9999px !important;
+}
+/* custom select styles */
+.select-area {
+	height: $select-height;
+	position: relative;
+	overflow: hidden;
+	color: $select-color;
+	font-size: 14px;
+	font-weight: 700;
+	background: $select-bg;
+	width: 100% !important;
+	&.select-active{
+		background: $select-bg-active;
+		color: $select-color-active;
+		.select-opener{
+			&:before{
+				border-top-color: $select-caret-active-color;
+			}
+		}
+	}
+	.select-opener {
+		width: 40px;
+		height: 100%;
+		position: absolute;
+		z-index: 3;
+		top: 0;
+		right: 0;
+		&:before{
+			content: '';
+			position: absolute;
+			top: 50%;
+			right: 12px;
+			border: solid transparent;
+			border-width: 7px 7px 0;
+			border-top-color: $select-caret-color;
+			margin-top: -3px;
+		}
+	}
+	.left{
+		display: none;
+	}
+	.center {
+		white-space: nowrap;
+		-ms-text-overflow: ellipsis;
+		text-overflow: ellipsis;
+		position: relative;
+		overflow: hidden;
+		line-height: $select-height - 2;
+		cursor: default;
+		display: block;
+		padding: 0 30px 0 13px;
+		z-index: 2;
+		text-transform: uppercase;
+		border: 1px solid $select-border;
+		@include border-box();
+	}
+	&.select-date-select{
+		.center{
+			border: none;
+		}
+		&:before{
+			content: '\63';
+			font-family: gowatchit-iconfont;
+			font-weight: 400;
+			font-size: 24px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 33px;
+			text-align: right;
+			line-height: $select-height;
+		}
+		.center{
+			padding-left: 44px;
+			padding-right: 35px;
+		}
+		.select-opener{
+			&:before{
+				right: 19px;
+			}
+		}
+		@include breakpoint(mobile){
+			.center{
+				font-size: 0;
+			}
+			.select-opener{display: none;}
+			&:before{
+				width: 100%;
+				text-align: center;
+			}
+		}
+	}
+}
+.select-options {
+	z-index: 9000;
+	position: absolute;
+	.drop-holder {
+		overflow-y: auto;
+		height: 1%;
+		margin-top: 7px;
+		background: $select-bg;
+		text-transform: uppercase;
+		font-size: 14px;
+		font-weight: 700;
+		@include border-box();
+		border: 1px solid $select-border;
+	}
+	&.select-options-flipped{
+		.drop-holder {
+			margin-top: 0;
+			margin-bottom: 7px;
+		}
+	}
+	div.drop-list {
+		width: 100%;
+	}
+	ul {
+		overflow: hidden;
+		list-style: none;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		li {
+			overflow: hidden;
+			float: left;
+			width: 100%;
+			&.item-selected{
+				a {
+					text-decoration: none;
+					background: $select-bg-active;
+					color: $select-color-active;
+				}
+			}
+		}
+		a {
+			text-decoration: none;
+			cursor: default;
+			color: $select-drop-color;
+			display: block;
+			overflow: hidden;
+			height: 1%;
+			padding: 5px 13px;
+			span {
+				cursor: default;
+				float: left;
+			}
+			&:hover {
+				text-decoration: none;
+			}
+			&:focus {
+				outline: none;
+			}
+		}
+	}
+	&.drop-date-select{
+		.drop-holder{
+			border: none;
+		}
+		ul{
+			a{
+				padding-left: 25px;
+			}
+		}
+		@include breakpoint(mobile){
+			height: auto !important;
+			width: 150px !important;
+			overflow-y: auto;
+			-webkit-transform: translate(-108px, 0);
+			-ms-transform: translate(-108px, 0);
+			-o-transform: translate(-108px, 0);
+			transform: translate(-108px, 0);
+			.drop-list{
+				height: auto !important;
+				max-height: 200px !important;
+			}
+			ul{
+				a{
+					padding-left: 12px;
+				}
+			}
+		}
+	}
+}

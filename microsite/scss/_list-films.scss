@@ -1,0 +1,163 @@
+.list-films{
+	position: relative;
+	overflow: hidden;
+	max-height: 860px;
+	.items{
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		counter-reset:section;
+		overflow-y: auto;
+		> li{
+			background: $list-films-bg;
+			position: relative;
+			@include border-box();
+			padding: 13px 25px 6px 70px;
+			&:before{
+				content:counter(section);
+				counter-increment:section;
+				position: absolute;
+				top: 15px;
+				left: 28px;
+				width: 28px;
+				font-size: 20px;
+				line-height: 28px;
+				font-weight: 700;
+				text-align: center;
+				color: $list-films-pin-color;
+				z-index: 2;
+			}
+			&:after{
+				content: '\50';
+				position: absolute;
+				z-index: 1;
+				top: 23px;
+				left: 24px;
+				font-family: gowatchit-iconfont;
+				color: $white;
+				font-size: 38px;
+				line-height: 20px;
+			}
+			&.active{
+				.show-hide{
+					&:before{
+						@include rotate(-180)
+					}
+				}
+			}
+			+li{margin-top: 9px;}
+		}
+	}
+	header{
+		position: relative;
+		padding: 0 30px 12px 0;
+		.icon{
+			position: absolute;
+			top: 4px;
+			right: 0;
+			font-size: 24px;
+			line-height: 24px;
+			color: $list-films-icon-color;
+		}
+		a.fancybox{
+			&:hover{
+				color: lighten($list-films-icon-color, 30%);
+			}
+		}
+		h2{
+			margin: 0;
+			color: $white;
+			text-transform: uppercase;
+			font-size: 24px;
+			line-height: 28px;
+		}
+	}
+	p{margin: 0;}
+	.body{
+		position: relative;
+		overflow: hidden;
+	}
+	.time-list{
+		border-top: 1px solid $list-films-icon-color;
+		padding: 2px 0;
+		ul{
+			list-style: none;
+			padding: 0 0 2px;
+			margin: 0;
+			text-align: center;
+			font-size: $base-font-size - 1;
+			font-weight: 700;
+			@include clearfix();
+			li{
+				float: left;
+				padding: 0 8px 8px 0;
+			}
+			a{
+				display: block;
+				color: $time-list-color;
+				background-color: $white;
+				border-radius: $base-radius;
+				padding: 3px 5px 2px;
+				&:hover{
+					background-color: $base-button-hover;
+					color: $time-list-color-active;
+				}
+			}
+		}
+	}
+	h3{
+		margin: 0 0 6px;
+		font-size: $base-font-size;
+		font-weight: 700;
+	}
+	footer{
+		text-align: right;
+	}
+	.show-hide{
+		display: inline-block;
+		vertical-align: top;
+		padding-right: 20px;
+		position: relative;
+		color: $white;
+		margin-top: -7px;
+		&:before{
+			content: '';
+			position: absolute;
+			top: 50%;
+			right: 0;
+			border: solid transparent;
+			border-width: 7px 7px 0;
+			border-top-color: $list-films-icon-color;
+			margin-top: -3px;
+			@include transition();
+		}
+		&:hover{
+			color: darken($white, 30%);
+		}
+	}
+	@include breakpoint(mobile){
+		max-height: none;
+		.items{
+			line-height: 1.667;
+			>li{
+				padding: 14px 20px 6px 57px;
+				&:after{left: 12px;}
+				&:before{left: 15px;}
+			}
+			header{
+				padding-bottom: 15px;
+				h2{
+					font-size: 18px;
+					line-height: 22px;
+					margin-bottom: -5px;
+				}
+				.icon{
+					top: 2px;
+				}
+			}
+			.time-list{padding: 1px 0;}
+			h3{margin-bottom: 4px;}
+			 .show-hide{margin-top: -2px;}
+		}
+	}
+}
