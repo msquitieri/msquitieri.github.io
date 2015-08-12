@@ -32,6 +32,7 @@ input[type="submit"] {
 	cursor: pointer;
 	@include transition();
 }
+input[type="search"]{-webkit-appearance: none;}
 form,fieldset{
 	margin:0;
 	padding:0;

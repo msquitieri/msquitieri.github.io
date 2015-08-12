@@ -36,6 +36,9 @@ input[type="submit"] {
   -o-transition: all 0.3s;
   transition: all 0.3s; }
 
+input[type="search"] {
+  -webkit-appearance: none; }
+
 form, fieldset {
   margin: 0;
   padding: 0;
@@ -1012,6 +1015,56 @@ main {
     width: 100%;
     vertical-align: top; }
 
+.main-map {
+  width: 100%;
+  position: relative;
+  height: 854px;
+  overflow: hidden; }
+  .main-map > #main-map {
+    height: 100%; }
+  .main-map img {
+    width: 100%;
+    vertical-align: top; }
+  .main-map .cinema-info {
+    display: none;
+    border: 1px solid #fff;
+    width: 347px;
+    -webkit-transition: bottom 0.3s;
+    -o-transition: bottom 0.3s;
+    transition: bottom 0.3s;
+    overflow: hidden; }
+    .main-map .cinema-info.hidden {
+      bottom: -100%; }
+  @media screen and (max-width: 1000px) {
+    .main-map {
+      height: 750px; }
+      .main-map .cinema-info {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        margin-top: -70px; } }
+  @media screen and (max-width: 767px), screen and (orientation: landscape) and (max-width: 767px), screen and (orientation: portrait) and (max-width: 767px) {
+    .main-map {
+      height: 377px; }
+      .main-map .cinema-info {
+        bottom: 0;
+        left: 0;
+        top: auto;
+        width: auto;
+        right: 0;
+        border-width: 1px 0 0;
+        margin-top: 0; } }
+
+.map-label {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #010101;
+  font-family: "Open Sans", sans-serif;
+  width: 27px;
+  text-align: center; }
+
 .channels {
   list-style: none;
   padding: 0;
@@ -1377,40 +1430,6 @@ main {
         padding-left: 5px;
         padding-right: 5px; } }
 
-.main-map {
-  width: 100%;
-  position: relative;
-  height: 854px; }
-  .main-map > #main-map {
-    height: 100%; }
-  .main-map img {
-    width: 100%;
-    vertical-align: top; }
-  .main-map .cinema-info {
-    display: none;
-    border: 1px solid #fff;
-    width: 347px; }
-  @media screen and (max-width: 1000px) {
-    .main-map {
-      height: 750px; }
-      .main-map .cinema-info {
-        display: block;
-        position: absolute;
-        top: 50%;
-        left: 15px;
-        margin-top: -70px; } }
-  @media screen and (max-width: 767px), screen and (orientation: landscape) and (max-width: 767px), screen and (orientation: portrait) and (max-width: 767px) {
-    .main-map {
-      height: 377px; }
-      .main-map .cinema-info {
-        bottom: 0;
-        left: 0;
-        top: auto;
-        width: auto;
-        right: 0;
-        border-width: 1px 0 0;
-        margin-top: 0; } }
-
 .cinema-info {
   background: rgba(0, 0, 0, 0.82);
   position: relative;
@@ -1661,17 +1680,21 @@ main {
         position: static;
         padding: 0;
         width: auto;
-        margin: 0; }
+        margin: 0 -9px; }
         .trailer .thumbnails .item {
           float: left;
-          margin: 0 18px 18px 0;
+          margin: 0 9px 18px;
           padding: 0; }
         .trailer .thumbnails img {
-          width: 100%; } }
+          width: 100%; }
+        .trailer .thumbnails .slick-arrow {
+          display: none; } }
   @media screen and (max-width: 767px), screen and (orientation: landscape) and (max-width: 767px), screen and (orientation: portrait) and (max-width: 767px) {
     .trailer .gallery {
       margin-bottom: 14px; }
-    .trailer .thumbnails .item {
-      margin: 0 14px 14px 0; } }
+    .trailer .thumbnails {
+      margin: 0 -7px; }
+      .trailer .thumbnails .item {
+        margin: 0 7px 14px; } }
 
 /*# sourceMappingURL=styles.css.map */

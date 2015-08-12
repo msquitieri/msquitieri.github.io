@@ -7,3 +7,57 @@
 		vertical-align: top;
 	}
 }
+.main-map{
+	width: 100%;
+	position: relative;
+	height: 854px;
+	overflow: hidden;
+	>#main-map{
+		height: 100%;
+	}
+	img{
+		width: 100%;
+		vertical-align: top;
+	}
+	.cinema-info{
+		display: none;
+		border: 1px solid $white;
+		width: 347px;
+		@include transition(bottom .3s);
+		overflow: hidden;
+		&.hidden{
+			bottom: -100%;
+		}
+	}
+	@include breakpoint(tablet){
+		height: 750px;
+		.cinema-info{
+			display: block;
+			position: absolute;
+			top: 50%;
+			left: 15px;
+			margin-top: -70px;
+		}
+	}
+	@include breakpoint(mobile){
+		height: 377px;
+		.cinema-info{
+			bottom: 0;
+			left: 0;
+			top: auto;
+			width: auto;
+			right: 0;
+			border-width: 1px 0 0;
+			margin-top: 0;
+		}
+	}
+}
+.map-label{
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 28px;
+	color: #010101;
+	font-family: $base-font-family;
+	width: 27px;
+	text-align: center;
+}

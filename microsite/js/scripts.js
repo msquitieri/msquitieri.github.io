@@ -88,7 +88,7 @@ $(document).ready(function (){
 		}
 	});
 
-	var trailerThumbs = $('.trailer .thumbnails'),
+	var trailerThumbs = $('.trailer .thumbnails > .holder'),
 		trailerGallery = $('.trailer .gallery');
 	trailerGallery.slick({
 		useCSS: false,
@@ -103,6 +103,7 @@ $(document).ready(function (){
 		vertical: true,
 		focusOnSelect: true,
 		centerPadding: '0',
+		arrows: false,
 		asNavFor: '.trailer .gallery',
 		responsive: [
 			{
@@ -122,6 +123,13 @@ $(document).ready(function (){
 			}
 		]
 	});
+	$('.trailer .thumbnails .slick-prev').click(function(){
+		trailerThumbs.slick('prev');
+	})
+
+	$('.trailer .thumbnails .slick-next').click(function(){
+		trailerThumbs.slick('next');
+	})
 
 
 	//google map
@@ -151,15 +159,13 @@ $(document).ready(function (){
 	}
 	var customImgObj  = {
 		'markerDef': {},
-		'marker01': {'image':'images/ico-pin1.png'},
-		'marker02': {'image':'images/ico-pin2.png'},
-		'marker03': {'image':'images/ico-pin3.png'}
+		'marker': {'image':'images/ico-pin.svg'}
 	};
 	var cinemas = [
 		['Your Location', 'markerDef', -33.9, 151.2, 5],
-		['Name1', 'marker01', -33.890542, 151.274856, 4],
-		['Name2', 'marker02', -33.923036, 151.259052, 3],
-		['Name3', 'marker03', -34.028249, 151.157507, 2]
+		['Name1', 'marker', -33.890542, 151.274856, 1],
+		['Name2', 'marker', -33.923036, 151.259052, 2],
+		['Name3', 'marker', -34.028249, 151.157507, 3]
 	];
 
 
@@ -167,12 +173,15 @@ $(document).ready(function (){
 		for (var i = 0; i < locations.length; i++) {
 			var lodge  = locations[i];
 			var myLatLng = new google.maps.LatLng(lodge[2], lodge[3]);
-			var marker = new google.maps.Marker({
+			var marker = new MarkerWithLabel({
 				position: myLatLng,
 				map: map,
 				icon: customImgObj[lodge[1]].image,
 				title: lodge[0],
-				zIndex: lodge[4]
+				zIndex: lodge[4],
+				labelContent: i == 0 ? '' : i.toString(),
+				labelClass: 'map-label',
+				labelAnchor: new google.maps.Point(14, 37)
 			});
 		}
 	}
@@ -183,4 +192,12 @@ $(document).ready(function (){
 		google.maps.event.addDomListener(window, 'load', initialize2);
 	};
 
+	$('.main-map .cinema-info').swipe( {
+		swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+			if (direction == 'down') {
+				$(this).addClass('hidden');
+			};
+		},
+		threshold:0
+	});
 });

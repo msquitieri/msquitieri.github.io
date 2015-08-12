@@ -69,22 +69,24 @@
 			position: static;
 			padding: 0;
 			width: auto;
-			margin: 0;
+			margin: 0 -9px;
 			.item{
 				float: left;
-				margin: 0 18px 18px 0;
+				margin: 0 9px 18px;
 				padding: 0;
 			}
 			img{
 				width: 100%;
 			}
+			.slick-arrow{display: none;}
 		}
 	}
 	@include breakpoint(mobile){
 		.gallery{margin-bottom: 14px;}
 		.thumbnails{
+			margin: 0 -7px;
 			.item{
-				margin: 0 14px 14px 0;
+				margin: 0 7px 14px;
 			}
 		}
 	}
